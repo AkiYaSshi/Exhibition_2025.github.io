@@ -19,12 +19,96 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{02EA681E-C7D8-
 		js\map.js = js\map.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{3576F010-7467-4194-B6F5-FF820016BAB4}"
+	ProjectSection(SolutionItems) = preProject
+		img\maa.png = img\maa.png
+		img\nextl.svg = img\nextl.svg
+		img\nextr.svg = img\nextr.svg
+		img\ntua.png = img\ntua.png
+		img\spin.svg = img\spin.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00", "00", "{C7CB601B-7535-42A5-92D7-63EE383CD7FC}"
+	ProjectSection(SolutionItems) = preProject
+		img\00\0-01.jpg = img\00\0-01.jpg
+		img\00\0-02.jpg = img\00\0-02.jpg
+		img\00\0-03.jpg = img\00\0-03.jpg
+		img\00\0-04.jpg = img\00\0-04.jpg
+		img\00\0-05.jpg = img\00\0-05.jpg
+		img\00\0-06.jpg = img\00\0-06.jpg
+		img\00\0-07.jpg = img\00\0-07.jpg
+		img\00\0-08.png = img\00\0-08.png
+		img\00\0-09.png = img\00\0-09.png
+		img\00\0-10.png = img\00\0-10.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{1C79B6BE-9666-44A2-ABEC-C8E6C2A83B5B}"
+	ProjectSection(SolutionItems) = preProject
+		img\01\1-01.png = img\01\1-01.png
+		img\01\cut6_拉鍊.mp4 = img\01\cut6_拉鍊.mp4
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{38DC99AF-F1DF-4F60-9F5A-C268CE247E33}"
+	ProjectSection(SolutionItems) = preProject
+		img\02\2-01.png = img\02\2-01.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03", "03", "{1B63813E-EFCE-416D-B037-368D4A843440}"
+	ProjectSection(SolutionItems) = preProject
+		img\03\3-01.png = img\03\3-01.png
+		img\03\3-02.png = img\03\3-02.png
+		img\03\3-03.png = img\03\3-03.png
+		img\03\3-04.png = img\03\3-04.png
+		img\03\3-11.png = img\03\3-11.png
+		img\03\3-12.png = img\03\3-12.png
+		img\03\3-13.png = img\03\3-13.png
+		img\03\3-21.png = img\03\3-21.png
+		img\03\3-22.png = img\03\3-22.png
+		img\03\3-23.png = img\03\3-23.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04", "04", "{309AA4ED-CE8F-482C-B2A3-BF284E3C65EA}"
+	ProjectSection(SolutionItems) = preProject
+		img\04\4-01.png = img\04\4-01.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05", "05", "{3427E582-4A2D-4655-9D81-0407C6CA8BFB}"
+	ProjectSection(SolutionItems) = preProject
+		img\05\5-01.png = img\05\5-01.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06", "06", "{1316B2CE-E4A2-4D58-8BB1-CC4BB8F779D3}"
+	ProjectSection(SolutionItems) = preProject
+		img\06\6-01.png = img\06\6-01.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "font", "font", "{CE615A82-7B62-453A-A9C1-43F55D21E4C0}"
+	ProjectSection(SolutionItems) = preProject
+		fonts\王漢宗特黑體繁.ttf = fonts\王漢宗特黑體繁.ttf
+		fonts\王漢宗細黑體繁.ttf = fonts\王漢宗細黑體繁.ttf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07", "07", "{B38BE439-5AE9-4E7E-81E1-B9DCEBAE7675}"
+	ProjectSection(SolutionItems) = preProject
+		img\07\7-01.png = img\07\7-01.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}
+		{3576F010-7467-4194-B6F5-FF820016BAB4} = {8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}
+		{C7CB601B-7535-42A5-92D7-63EE383CD7FC} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{1C79B6BE-9666-44A2-ABEC-C8E6C2A83B5B} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{38DC99AF-F1DF-4F60-9F5A-C268CE247E33} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{1B63813E-EFCE-416D-B037-368D4A843440} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{309AA4ED-CE8F-482C-B2A3-BF284E3C65EA} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{3427E582-4A2D-4655-9D81-0407C6CA8BFB} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{1316B2CE-E4A2-4D58-8BB1-CC4BB8F779D3} = {3576F010-7467-4194-B6F5-FF820016BAB4}
+		{CE615A82-7B62-453A-A9C1-43F55D21E4C0} = {8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}
+		{B38BE439-5AE9-4E7E-81E1-B9DCEBAE7675} = {3576F010-7467-4194-B6F5-FF820016BAB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E18581CA-768F-4C5A-95A2-FD6C30B83793}

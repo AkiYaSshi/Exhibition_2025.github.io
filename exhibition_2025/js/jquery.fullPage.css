@@ -227,9 +227,3 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
 }
-a.active{
-	border:1px #FCFADD solid ;
-	border-radius:10px;
-	padding:5px 2px;	
-	background:#F1858B;
-	}
