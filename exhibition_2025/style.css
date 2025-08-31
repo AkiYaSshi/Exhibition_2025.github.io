@@ -25,7 +25,8 @@ body {
 	}
 .section {
 
-	background-size: cover;
+	width: 100%;
+	background-size: 100%;
 	background-position-x: left;
 	background-repeat: no-repeat;
 }
@@ -123,7 +124,8 @@ body {
 }
 .intro,
 .host,
-.sponsor{
+.sponsor,
+.workSection{
 	position:absolute;
 	z-index: 2;
 }
@@ -182,6 +184,23 @@ body {
 		display: flex;
 		top: 62vh;
 		left: 71.6vw;
+	}
+
+	.works .contentArea{
+		width:100%;
+		justify-content: center;
+		gap: 2vw;
+	}
+
+	.workSection {
+		display: flex;
+		width: 100%;
+		position: absolute;
+		padding-top: 30vw;
+	}
+
+	.button{
+		width: 23vw;
 	}
 
 	.traffic .intro{
