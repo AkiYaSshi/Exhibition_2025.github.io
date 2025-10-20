@@ -209,7 +209,7 @@ body {
 
 .works .contentArea {
 	position: absolute;
-	margin-top: calc(7vh + 7vw);
+	margin-top: calc(0vh + 17.8vw);
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
