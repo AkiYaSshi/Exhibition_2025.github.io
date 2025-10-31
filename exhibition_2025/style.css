@@ -94,7 +94,7 @@ body * {
 		line-height: 0.5em;
 		float: left;
 		margin: 0 1.25vmin;
-		font-size: max(16px, 3vmin);
+		font-size: 1.5em;
 		color: #000;
 	}
 		a.active {
@@ -104,7 +104,7 @@ body * {
 		.header a span {
 			line-height: 1.7vw;
 			font-weight: 400;
-			font-size: 1vw;
+			font-size: 0.5em;
 			letter-spacing: -1px;
 		}
 
@@ -153,27 +153,44 @@ body * {
 	flex-direction:column;
 }
 .about .intro {
-	margin-top: max(48px, 4vw);
+	margin-top:80px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-	.about .intro p{
-		font-size: max(18px, 1vw);
-		margin: max(12px, 1vw);
-	}
 		.about .intro .highlight_text {
-			margin-top: max(24px, 2vw);
-			margin-bottom: max(24px, 2vw);
+			margin-top: 24px;
+			margin-bottom: 24px;
 		}
 	.about .intro .highlight_group{
 		background-size:contain;
 		background-repeat: no-repeat;
 	}
+.about .img_jarL {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	width: 522px;
+	aspect-ratio: 4/5;
+}
+	.about .img_jarL span {
+		margin-top: 78px;
+		margin-left: 30px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	.about .img_jarL span *{
+		width:100%;
+		height:100%;
+	}
 .intro_group {
-	width: 45%;
+	margin-top: 120px;
+	margin-left: 600px;
+	width: 650px;
 	min-width: 530px;
 	display: flex;
 	justify-content: center;
@@ -189,7 +206,6 @@ body * {
 		width: inherit;
 		object-fit: contain;
 	}
-	.info .intro p,
 	.info .host p,
 	.info .sponsor p{
 		font-size: 30px;
