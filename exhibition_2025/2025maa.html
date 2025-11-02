@@ -9,27 +9,68 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+        const sections = ['#top', '#about', '#info', '#works', '#merch', '#traffic', '#links'];
+        let currentIndex = 0;
+        let isScrolling = false;
 
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        // 滾動到指定 section
+        function scrollToSection(index) {
+            if (index < 0 || index >= sections.length || isScrolling) return;
 
+            isScrolling = true;
 
+            window.location.href = sections[index];
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                controlArrows: true,
-                scrollingSpeed: 0,
-                anchors: ['Home', 'About', 'Info', 'Works', 'Merch', 'Traffic', 'Links'],
-                menu: '#headermenu',
-                css3: false
-            });
-        });</script>
+            // 更新 URL hash（可選）
+            history.pushState(null, null, sections[index]);
+
+            currentIndex = index;
+
+            // 避免連續滾動
+            setTimeout(() => { isScrolling = false; }, 300);
+        }
+
+        // 監聽滾輪
+        window.addEventListener('wheel', (e) => {
+            if (e.deltaY > 0) {
+                // 往下滾 → 下一個
+                scrollToSection(currentIndex + 1);
+            } else if (e.deltaY < 0) {
+                // 往上滾 → 上一個
+                scrollToSection(currentIndex - 1);
+            }
+        });
+
+        // 手機觸控支援（可選）
+        let touchStartY = 0;
+        window.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;
+        });
+        window.addEventListener('touchend', (e) => {
+            const touchEndY = e.changedTouches[0].clientY;
+            const diff = touchStartY - touchEndY;
+            if (Math.abs(diff) > 50) {  // 滑動距離夠大才觸發
+                if (diff > 0) scrollToSection(currentIndex + 1);
+                else scrollToSection(currentIndex - 1);
+            }
+        });
+
+        // 頁面載入時，根據 URL hash 定位
+        window.addEventListener('load', () => {
+            const hash = window.location.hash;
+            const index = sections.indexOf(hash);
+            if (index !== -1) {
+                currentIndex = index;
+                scrollToSection(index);
+            }
+        });
+    </script>
     <style>
         @import url("style.css");
     </style>
@@ -38,7 +79,7 @@
 <body>
     <div class="title">
         <div class="home">
-            <a href="#Home" id="homelink">2025</a>
+            <a href="#top" id="homelink">2025</a>
             <span class="descirption">國立臺灣藝術大學<br />多媒體動畫藝術學系</span>
             <span class="descirption">設計學院<br />第貳拾壹屆系展</span>
         </div>
@@ -49,199 +90,204 @@
         </label>
         <input type="checkbox" id="burger" />
         <div class="header" id="headermenu">
-            <a data-menuanchor="About" href="#About" id="aboutlink">展覽簡介<br /><span>ABOUT</span></a>
-            <a data-menuanchor="Info" href="#Info" id="infolink">詳細資料<br /><span>INFO</span></a>
-            <a data-menuanchor="Works" href="#Works">參展作品<br /><span>WORKS</span></a>
-            <a data-menuanchor="Merch" href="#Merch" id="merchlink">周邊商品<br /><span>MERCH</span></a>
-            <a data-menuanchor="Traffic" href="#Traffic" id="trafficlink">交通資訊<br /><span>TRAFFIC</span></a>
-            <a data-menuanchor="Links" href="#Links" id="linkslink">了解更多<br /><span>MORE</span></a>
+            <a href="#about">展覽簡介<br /><span>ABOUT</span></a>
+            <a href="#info">詳細資料<br /><span>INFO</span></a>
+            <a href="#works">參展作品<br /><span>WORKS</span></a>
+            <a href="#merch">周邊商品<br /><span>MERCH</span></a>
+            <a href="#traffic">交通資訊<br /><span>TRAFFIC</span></a>
+            <a href="#links">了解更多<br /><span>MORE</span></a>
         </div>
     </div>
 
-    <div id="fullpage">
-        <div class="section">
-            <div class="frame">
-                <div class="homeframe">
-                    <div class="main_icon">
-                        <img class="background" src="img/01/1-01.png" />
-                        <img class="background" src="img/01/1-02.png" />
-                        <img class="background" src="img/01/1-03.png" />
-                        <img class="background" src="img/01/1-04.png" />
-                        <img class="background" src="img/01/1-05.png" />
-                        <img class="background" src="img/01/1-06.png" />
-                        <img class="background" src="img/01/1-07.png" />
-                        <img class="background" src="img/01/1-08.png" />
-                        <img class="background" src="img/01/1-09.png" />
-                    </div>
+    <div class="section" id="top">
+        <div class="frame">
+            <div class="homeframe">
+                <div class="main_icon">
+                    <img class="background" src="img/01/1-01.png" />
+                    <img class="background" src="img/01/1-02.png" />
+                    <img class="background" src="img/01/1-03.png" />
+                    <img class="background" src="img/01/1-04.png" />
+                    <img class="background" src="img/01/1-05.png" />
+                    <img class="background" src="img/01/1-06.png" />
+                    <img class="background" src="img/01/1-07.png" />
+                    <img class="background" src="img/01/1-08.png" />
+                    <img class="background" src="img/01/1-09.png" />
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="section">
-            <div class="frame">
-                <div class="about">
-                    <div class="img_jarL">
-                        <span>
-                            <img class="background" src="img/02/2-01.png" />
-                            <img class="background-m" src="img/02/2-04.png" />
-                        </span>
-                    </div>
-                    <div class="intro_group">
-                        <img class="background" src="img/02/2-02.png" />
-                        <div class="intro">
-                            <p>在肝麻的日子裡，把情緒壓縮成包；</p>
-                            <p>在肝麻的日子裡，懷念童年無憂慮</p>
-                            <div class="highlight_group">
-                                <p class="highlight_text">「何以解憂？唯有解壓縮。」</p>
-                                <div class="highlight_bg">
-                                    <img src="img/02/2-08.png" />
-                                </div>
+    <div class="section" id="about">
+        <div class="frame">
+            <div class="about">
+                <div class="img_jarL">
+                    <span>
+                        <img class="background" src="img/02/2-01.png" />
+                        <img class="background-m" src="img/02/2-04.png" />
+                    </span>
+                </div>
+                <div class="intro_group">
+                    <img class="background" src="img/02/2-02.png" />
+                    <div class="intro">
+                        <p>在肝麻的日子裡，把情緒壓縮成包；</p>
+                        <p>在肝麻的日子裡，懷念童年無憂慮</p>
+                        <div class="highlight_group">
+                            <p class="highlight_text">「何以解憂？唯有解壓縮。」</p>
+                            <div class="highlight_bg">
+                                <img src="img/02/2-08.png" />
                             </div>
-                            <p>多媒的肝仔啊，何不將情緒與靈感解壓縮，</p>
-                            <p>回到童年無憂柑仔店，憶起你那仍未泯滅的童心</p>
-                            <p>所以說，你不解壓縮在幹麻？</p>
                         </div>
+                        <p>多媒的肝仔啊，何不將情緒與靈感解壓縮，</p>
+                        <p>回到童年無憂柑仔店，憶起你那仍未泯滅的童心</p>
+                        <p>所以說，你不解壓縮在幹麻？</p>
                     </div>
-                    <div class="img_stars">
-                        <img class="background" src="img/02/2-03.png" />
-                    </div>
+                </div>
+                <div class="img_stars">
+                    <img class="background" src="img/02/2-03.png" />
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="section">
-            <div class="frame">
-                <div class="info">
-                    <div class="intro-left">
-                        <img class="background" src="img/03/3-05.png" />
-                        <ul class="intro">
-                            <h4>
-                                <img class="mark" src="img/03/3-03.png" />
-                                展覽資訊
-                            </h4>
+    <div class="section" id="info">
+        <div class="frame">
+            <div class="info">
+                <div class="intro-left">
+                    <img class="background" src="img/03/3-05.png" />
+                    <ul class="intro">
+                        <h4>
+                            <img class="mark" src="img/03/3-03.png" />
+                            展覽資訊
+                        </h4>
+                        <li>
+                            <div class="row">展覽日期：2025.11.18～11.30</div>
+                            <div class="row">展覽地點：本校九單藝術實踐空間A展間</div>
+                            <div class="row">
+                                展覽時段：平日：10：10～20：00
+                                <br />假日：10：00～17：00
+                            </div>
+                        </li>
+                        <h4>
+                            <img class="mark" src="img/03/3-04.png" />
+                            開幕典禮
+                        </h4>
+                        <li>
+                            <div class="row">開幕時間：2025.11.18　12：00</div>
+                            <div class="row">開幕地點：本校九單藝術實踐空間A展間</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="intro-right">
+                    <div class="intro-top">
+                        <img class="background" src="img/03/3-02.png" />
+                        <ul class="host">
+                            <h4>主辦單位</h4>
                             <li>
-                                <div class="row">展覽日期：2025.11.18～11.30</div>
-                                <div class="row">展覽地點：本校九單藝術實踐空間A展間</div>
+                                <div class="row">【主辦單位】國立臺灣藝術大學</div>
+                                <div class="row">【協辦單位】國立臺灣藝術大學設計學院</div>
                                 <div class="row">
-                                    展覽時段：平日：10：10～20：00
-                                    <br />假日：10：00～17：00
+                                    【承辦單位】國立臺灣藝術大學
+                                    <br />多媒體動畫藝術學系暨系學會
                                 </div>
-                            </li>
-                            <h4>
-                                <img class="mark" src="img/03/3-04.png" />
-                                開幕典禮
-                            </h4>
-                            <li>
-                                <div class="row">開幕時間：2025.11.18　12：00</div>
-                                <div class="row">開幕地點：本校九單藝術實踐空間A展間</div>
                             </li>
                         </ul>
                     </div>
-                    <div class="intro-right">
-                        <div class="intro-top">
-                            <img class="background" src="img/03/3-02.png" />
-                            <ul class="host">
-                                <h4>主辦單位</h4>
-                                <li>
-                                    <div class="row">【主辦單位】國立臺灣藝術大學</div>
-                                    <div class="row">【協辦單位】國立臺灣藝術大學設計學院</div>
-                                    <div class="row">
-                                        【承辦單位】國立臺灣藝術大學
-                                        <br />多媒體動畫藝術學系暨系學會
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="intro-buttom">
-                            <img class="background" src="img/03/3-01.png" />
-                            <ul class="sponsor">
-                                <h4>贊助單位</h4>
-                                <li>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="intro-buttom">
+                        <img class="background" src="img/03/3-01.png" />
+                        <ul class="sponsor">
+                            <h4>贊助單位</h4>
+                            <li>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div class="section">
-            <div class="frame">
-                <div class="works">
-                    <div class="background_group">
-                        <img class="background" src="img/04/4-1-01.png" />
-                    </div>
+    <div class="section" id="works">
+        <div class="frame">
+            <div class="works">
+                <div class="background_group">
+                    <img class="background" src="img/04/4-1-01.png" />
+                </div>
 
-                    <div class="contentArea">
-                        <div class="works_group">
-                            <a href="#aa">
+                <div class="contentArea">
+                    <div class="works_group">
+                        <a href="#aa">
+                            <span>
                                 <img class="background" src="img/04/4-1-02.png" />
-                            </a>
-                        </div>
-                        <div class="works_group">
-                            <a href="#md">
+                                <img class="background-m" src="img/04/4-02.png" />
+                            </span>
+                        </a>
+                        <a href="#md">
+                            <span>
                                 <img class="background" src="img/04/4-1-03.png" />
-                            </a>
-                        </div>
-                        <div class="works_group">
-                            <a href="#nma">
+                                <img class="background-m" src="img/04/4-03.png" />
+                            </span>
+                        </a>
+                        <a href="#nma">
+                            <span>
                                 <img class="background" src="img/04/4-1-04.png" />
-                            </a>
-                        </div>
+                                <img class="background-m" src="img/04/4-04.png" />
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="section">
-            <div class="frame">
-                <div class="merch">
-                    <img class="background" src="img/05/5-01.png" />
-                </div>
+    <div class="section" id="merch">
+        <div class="frame">
+            <div class="merch">
+                <img class="background" src="img/05/5-01.png" />
+                <img class="background" src="img/05/5-02.png" />
+                <img class="background" src="img/05/5-03.png" />
             </div>
         </div>
+    </div>
 
 
-        <div class="section">
-            <div class="frame">
-                <div class="traffic">
-                    <img class="background" src="img/06/6-01.png" />
-                    <img class="background" src="img/06/6-02.png" />
-                    <img class="background" src="img/06/6-03.png" />
-                    <img class="background" src="img/06/6-04.png" />
-                    <img class="background" src="img/06/6-07.png" />
+    <div class="section" id="traffic">
+        <div class="frame">
+            <div class="traffic">
+                <img class="background" src="img/06/6-01.png" />
+                <img class="background" src="img/06/6-02.png" />
+                <img class="background" src="img/06/6-03.png" />
+                <img class="background" src="img/06/6-04.png" />
+                <img class="background" src="img/06/6-07.png" />
 
-                    <div class="intro">
-                        <div class="contentArea">
-                            <div class="column">
-                                <div class="row" style="writing-mode: vertical-lr; font-size: 23px;">鐵路</div>
-                                <div class="row">
-                                    乘高鐵至【台北車站】
-                                    <br />轉乘（南下）復興號區間車
-                                    <br />至【浮洲】站下車後行走五分鐘可到
-                                </div>
+                <div class="intro">
+                    <div class="contentArea">
+                        <div class="column">
+                            <div class="row" style="writing-mode: vertical-lr; font-size: 23px;">鐵路</div>
+                            <div class="row">
+                                乘高鐵至【台北車站】
+                                <br />轉乘（南下）復興號區間車
+                                <br />至【浮洲】站下車後行走五分鐘可到
                             </div>
-                            <div class="column">
-                                <div class="row" style="writing-mode: vertical-lr; font-size: 1.5vw;">公車</div>
-                                <div class="row">
-                                    乘公車701、702、793z
-                                    <br />至【國立臺灣藝術大學】站
-                                    <br />下車後行走五分鐘可到
-                                </div>
+                        </div>
+                        <div class="column">
+                            <div class="row" style="writing-mode: vertical-lr; font-size: 1.5vw;">公車</div>
+                            <div class="row">
+                                乘公車701、702、793z
+                                <br />至【國立臺灣藝術大學】站
+                                <br />下車後行走五分鐘可到
                             </div>
                         </div>
                     </div>
-                    <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8283250280197!2d121.44544191500576!3d25.005948783985552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802ac9d6c823d%3A0x83607782804de78!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5aSn6KeA6Lev5LiA5q61NTnomZ8!5e0!3m2!1szh-TW!2stw!4v1585213341471!5m2!1szh-TW!2stw"></iframe>
                 </div>
+                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8283250280197!2d121.44544191500576!3d25.005948783985552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802ac9d6c823d%3A0x83607782804de78!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5aSn6KeA6Lev5LiA5q61NTnomZ8!5e0!3m2!1szh-TW!2stw!4v1585213341471!5m2!1szh-TW!2stw"></iframe>
             </div>
         </div>
+    </div>
 
-        <div class="section">
-            <div class="frame">
-                <div class="links">
-                    <img class="background" src="img/07/7-01.png" />
-                </div>
+    <div class="section" id="links">
+        <div class="frame">
+            <div class="links">
+                <img class="background" src="img/07/7-01.png" />
             </div>
         </div>
     </div>
@@ -256,6 +302,7 @@
         <a href="http://maa.ntua.edu.tw/"><img src="img/00/0-09.png" alt="MAA" /></a>
         <a href=""><img src="img/00/0-10.png" alt="quiz" /></a>
     </div>
+
 </body>
 
 
