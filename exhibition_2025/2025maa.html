@@ -21,6 +21,8 @@
         let currentIndex = 0;
         let isScrolling = false;
 
+        window.location.href = sections[sections.indexOf(window.location.hash)];
+
         // 滾動到指定 section
         function scrollToSection(index) {
             if (index < 0 || index >= sections.length || isScrolling) return;
@@ -79,6 +81,7 @@
 </head>
 
 <body>
+    
     <div class="title">
         <div class="home">
             <a href="#top" id="homelink">2025</a>
@@ -117,6 +120,7 @@
                 </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
     <div class="section" id="about">
@@ -149,6 +153,7 @@
                 </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
     <div class="section" id="info">
@@ -205,8 +210,8 @@
                 </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
-
 
     <div class="section" id="works">
         <div class="frame">
@@ -239,6 +244,7 @@
                 </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
     <div class="section" id="merch">
@@ -257,41 +263,62 @@
                 </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
 
     <div class="section" id="traffic">
         <div class="frame">
             <div class="traffic">
-                <img class="background" src="img/06/6-01.png" />
-                <img class="background" src="img/06/6-02.png" />
-                <img class="background" src="img/06/6-03.png" />
-                <img class="background" src="img/06/6-04.png" />
-                <img class="background" src="img/06/6-07.png" />
-
+                <span class="left-deco">
+                    <img class="background" src="img/06/6-02.png" />
+                </span>
+                <span class="right-deco">
+                    <img class="background" src="img/06/6-04.png" />
+                </span>
                 <div class="intro">
-                    <div class="contentArea">
-                        <div class="column">
-                            <div class="row" style="writing-mode: vertical-lr; font-size: 23px;">鐵路</div>
-                            <div class="row">
-                                乘高鐵至【台北車站】
-                                <br />轉乘（南下）復興號區間車
-                                <br />至【浮洲】站下車後行走五分鐘可到
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="row" style="writing-mode: vertical-lr; font-size: 1.5vw;">公車</div>
-                            <div class="row">
-                                乘公車701、702、793z
-                                <br />至【國立臺灣藝術大學】站
-                                <br />下車後行走五分鐘可到
-                            </div>
+                    <div class="intro-bg">
+                        <img class="background" src="img/06/6-07.png" />
+                        <div class="intro-txt">
+                            <ul>
+                                <h4>
+                                    <img class="side-point" src="img/06/6-08.png" />鐵路
+                                </h4>
+                                <li>
+                                    <div class="row" style="writing-mode: vertical-lr; font-size: 23px;"></div>
+                                    <div class="row">
+                                        乘高鐵至【台北車站】
+                                        <br />轉乘（南下）復興號區間車
+                                        <br />至【浮洲】站下車後行走五分鐘可到
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h4>
+                                    <img class="side-point" src="img/06/6-09.png" />公車
+                                </h4>
+                                <li>
+                                    <div class="row">
+                                        乘公車701、702、793z
+                                        <br />至【國立臺灣藝術大學】站
+                                        <br />下車後行走五分鐘可到
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8283250280197!2d121.44544191500576!3d25.005948783985552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802ac9d6c823d%3A0x83607782804de78!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5aSn6KeA6Lev5LiA5q61NTnomZ8!5e0!3m2!1szh-TW!2stw!4v1585213341471!5m2!1szh-TW!2stw"></iframe>
+                <div class="map">
+                    <span class="map-bg">
+                        <img class="background" src="img/06/6-01.png" />
+                        <span>
+                            <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8283250280197!2d121.44544191500576!3d25.005948783985552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802ac9d6c823d%3A0x83607782804de78!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5aSn6KeA6Lev5LiA5q61NTnomZ8!5e0!3m2!1szh-TW!2stw!4v1585213341471!5m2!1szh-TW!2stw"></iframe>
+                        </span>
+                    </span>
+                </div>
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
     <div class="section" id="links">
@@ -300,6 +327,7 @@
                 <img class="background" src="img/07/7-01.png" />
             </div>
         </div>
+        <div class="noise-texture"></div>
     </div>
 
 

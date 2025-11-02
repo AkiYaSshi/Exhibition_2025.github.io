@@ -131,16 +131,27 @@ body {
 	left: 0;
 	background: linear-gradient(to bottom, #9f573e, #7b3c2c);
 }
+.noise-texture {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index:0;
+	background-image: url('img/tex/咖啡底紋理.png')
+}
 
-	.frame {
-		background-color: #fff8f4; /* 設定背景色 */
-		border-radius: 0px 0px 20px 20px;
-		border: #000 3px solid;
-		height: 88%;
-		width: 97%;
-		margin-top: 60px;
-		justify-self: center;
-	}
+.frame {
+	background-color: #fff8f4; /* 設定背景色 */
+	border-radius: 0px 0px 20px 20px;
+	border: #000 3px solid;
+	height: 88%;
+	width: 97%;
+	margin-top: 60px;
+	justify-self: center;
+	position: absolute;
+	z-index: 1;
+}
 
 
 	.home {
@@ -740,66 +751,163 @@ body {
 		position:relative;
 		width:100%;
 	}
-
-
-	.traffic .intro {
-		top: 39.7vh;
-		left: 14vw;
-	}
-
-
-	.traffic .contentArea {
-		flex-direction: column;
-		gap: 5vw;
-	}
-
-	.traffic .column {
-		flex-direction: row;
-		align-items: center;
-		gap: 2vw;
-	}
-
-	/*ANIM*/
-	.anim {
-		width: 89%;
-		height: 66%;
+.traffic .intro {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+.traffic .intro-bg {
+	position: absolute;
+	bottom: 0;
+	left:10%;
+	width: min(52vh, (max(341.05px, 36.3%)));
+	aspect-ratio: 487 / 760;
+	z-index: 0;
+}
+	.traffic .intro-bg .background {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
+		width:100%;
 	}
-
-	.googleMap {
+.traffic .intro-txt {
+	position: absolute;
+	bottom: max(170px, 39%);
+	left: 9%;
+	z-index: 2;
+}
+	.traffic .intro-txt ul {
+		padding: 20px 0;
+		display: flex;
+	}
+		.traffic .intro-txt ul li{
+			position:relative;
+			left:25px;
+		}
+			.traffic .intro-txt h4 {
+				position: relative;
+				font-size: 1.6em;
+				margin: 0;
+				-webkit-writing-mode: vertical-lr;
+				writing-mode: vertical-lr;
+			}
+	.traffic .intro-txt h4 *{
+		display:flex;
+		justify-content:center;
+		position:absolute;
+	}
+			.traffic .intro-txt h4 img {
+				z-index: -1;
+				width: 55px;
+				top: -50%;
+				left: -34%;
+			}
+	.traffic .map {
+		width: 100%;
 		position: absolute;
-		top: 300px;
-		left: 52%;
-		width: 600px;
-		height: 375px;
-		border: 0;
-		z-index: 0;
-		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		top: 0;
+		left: 24%;
 	}
-
-	.summary {
-		color: #FFFFFF;
+	.traffic .map .map-bg {
 		position: absolute;
-		top: 10%;
-		right: 30px;
-		line-height: 3em;
-		width: 30%;
-		height: 80%;
+		height: 800px;
+		width: 45%;
+	}
+		.traffic .map .map-bg span {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			aspect-ratio: 541 / 461;
+		}
+.traffic .left-deco,
+.traffic .right-deco {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+	.traffic .left-deco .background,
+	.traffic .right-deco .background {
+		position: absolute;
+		object-fit: contain;
+		bottom: 0;
+		width: max(516px, 50%);
+	}
+		.traffic .left-deco .background{
+			left:34%;
+		}
+		.traffic .right-deco .background{
+			right:0;
+		}
+
+			.googleMap {
+				position: absolute;
+				width: 70%;
+				aspect-ratio: 3 / 2;
+				border: 0;
+				z-index: 0;
+				border-radius: 5px;
+				align-self: end;
+				bottom: min(50px, 5%);
+			}
+@media screen and (max-width:1200px) {
+	.traffic .intro-txt ul li .row {
+		font-size: 0.8em;
 	}
 
-
-	.footer {
-		position: fixed;
-		bottom: 210px;
-		right: 2.3vw;
-		height: 50px;
-		width: 150px;
-		z-index: 10;
-		text-align: right;
+	.traffic .intro-txt h4 {
+		font-size: 1.2em;
 	}
+
+		.traffic .intro-txt h4 img {
+			width: 40px;
+			top: -38%;
+			left: -29%;
+		}
+
+	.traffic .intro-txt ul {
+		padding: 10px 0;
+	}
+	.traffic .map .map-bg {
+		width: 55%;
+	}
+}
+@media screen and (max-width:990px) {
+	.traffic .map {
+		left: auto;
+	}
+
+		.traffic .map .map-bg {
+			width: min(550px, 100%);
+		}
+	.traffic .intro-bg {
+		position: absolute;
+		left: auto;
+
+	}
+	.traffic .intro-bg .background {
+		display:none;
+	}
+	.traffic .intro-txt {
+		bottom: 10%;
+		left: auto;
+		background: #fff8f4db;
+		backdrop-filter:grayscale();
+		padding: 20px;
+		border-radius:5px;
+	}
+}
+.footer {
+	position: fixed;
+	bottom: 210px;
+	right: 2.3vw;
+	height: 50px;
+	width: 150px;
+	z-index: 10;
+	text-align: right;
+}
 
 		.footer a {
 			margin-left: 16px;
