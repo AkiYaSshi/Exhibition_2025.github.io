@@ -712,9 +712,35 @@ body {
 				object-fit: contain;
 			}
 }
-.button {
-	width: 23vw;
+
+.merch .title {
+	position: relative;
+	top: 30px;
+	width: 100%;
+	justify-content: center;
 }
+	.merch .title span {
+		width: max(200px, 20vw);
+	}
+	.merch .title span img {
+		position: relative;
+		width: 100%;
+	}
+.merch .bottom-banner {
+	position: absolute;
+	bottom: 0;
+	display:flex;
+	width: 100%;
+	justify-content: center;
+}
+	.merch .bottom-banner span{
+		width:100%;
+	}
+	.merch .bottom-banner span img{
+		position:relative;
+		width:100%;
+	}
+
 
 	.traffic .intro {
 		top: 39.7vh;

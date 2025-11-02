@@ -15,6 +15,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
+        window.location.hash = (window.location.hash == "") ? '#top' : window.location.hash;
+
         const sections = ['#top', '#about', '#info', '#works', '#merch', '#traffic', '#links'];
         let currentIndex = 0;
         let isScrolling = false;
@@ -55,7 +57,7 @@
         window.addEventListener('touchend', (e) => {
             const touchEndY = e.changedTouches[0].clientY;
             const diff = touchStartY - touchEndY;
-            if (Math.abs(diff) > 50) {  // 滑動距離夠大才觸發
+            if (Math.abs(diff) > 20) {  // 滑動距離夠大才觸發
                 if (diff > 0) scrollToSection(currentIndex + 1);
                 else scrollToSection(currentIndex - 1);
             }
@@ -243,8 +245,16 @@
         <div class="frame">
             <div class="merch">
                 <img class="background" src="img/05/5-01.png" />
-                <img class="background" src="img/05/5-02.png" />
-                <img class="background" src="img/05/5-03.png" />
+                <div class="bottom-banner">
+                    <span>
+                        <img class="background" src="img/05/5-02.png" />
+                    </span>
+                </div>
+                <div class="title">
+                    <span>
+                        <img class="background" src="img/05/5-03.png" />
+                    </span>
+                </div>
             </div>
         </div>
     </div>
