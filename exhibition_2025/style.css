@@ -21,8 +21,12 @@ body {
 	user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-body * {
+
+	body * {
 	font-family: 'king';
+}
+li {
+	list-style-type:none;
 }
 .title{
 	width: 100%;
@@ -194,22 +198,21 @@ body * {
 	}
 
 
-	.homeframe,
-	.about,
-	.info,
-	.works,
-	.merch,
-	.traffic,
-	.links {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		align-self: center;
-		justify-self: center;
-		top: 0px;
-	}
+.homeframe,
+.about,
+.info,
+.works,
+.merch,
+.traffic,
+.links {
+	position: relative !important;
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	justify-self: center;
+	top: 0px;
+}
 
-	.intro,
 	.host,
 	.sponsor,
 	.workSection {
@@ -227,11 +230,9 @@ body * {
 		margin-bottom: 3vw;
 	}
 
-	.column {
-		display: inline-flex;
-		flex-direction: column;
-	}
-
+.about{
+	display: flex;
+}
 .about .intro {
 	margin-top: 80px;
 	position: relative;
@@ -240,6 +241,7 @@ body * {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	z-index:2;
 }
 
 .about .intro p {
@@ -278,14 +280,14 @@ body * {
 	left: -10vw;
 }
 
-		.about .img_jarL span {
-			margin-top: 78px;
-			margin-left: 30px;
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-		}
+	.about .img_jarL span {
+		margin-top: 25px;
+		margin-left: 30px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
 
 			.about .img_jarL span .background {
 				z-index: 0;
@@ -305,12 +307,13 @@ body * {
 
 .intro_group {
 	position: absolute;
-	margin-top: 120px;
+	top: 40px;
 	left: 40%;
 	width: 650px;
 	min-width: 530px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	aspect-ratio: 1 / 1;
 	min-height: 250px;
 	overflow: hidden;
@@ -346,7 +349,7 @@ body * {
 		left: 0;
 		width: 100%;
 		height: 80%;
-		margin-top: 160px;
+		top: 120px;
 		min-width: 0;
 	}
 		.intro_group .background {
@@ -359,11 +362,6 @@ body * {
 		padding: 0 20px;
 	}
 }
-	.info .host p,
-	.info .sponsor p {
-		font-size: 30px;
-		margin-bottom: 1vw;
-	}
 @media screen and (min-width: 1200px){
 	.about .img_jarL {
 		left: 0;
@@ -372,13 +370,14 @@ body * {
 @media screen and (min-width: 2048px) {
 	.about .img_jarL {
 		
-		width: 850px;
+		width: 710px;
 	}
 		.about .img_jarL span{
-			margin-top: 105px;
+			margin-top: 110px;
+			margin-left: 5vw;
 		}
 	.intro_group{
-		width:1100px;
+		width: 925px;
 	}
 	.about .intro p {
 		font-size:2em;
@@ -387,40 +386,173 @@ body * {
 		width: 70%;
 	}
 }
+.intro-left {
+	display: flex;
+	justify-content: center;
+	z-index: 4;
+	width: 50%;
+	min-width: 750px;
+}
+	.intro-left .intro {
+		position: relative;
+		top: max(10vw,140px);
+		z-index: 4;
+	}
+	.intro-left .background {
+		width: min(1130px, 50%);
+		min-width: 750px;
+		z-index: 3;
+	}
 
-.info .column, .host .column {
-	gap: 2.3vh;
+	.intro-left .intro h4{
+		display: flex;
+		position: relative;
+		align-items: center;
+		font-size: 1.6em;
+		margin: 10px 0;
+		z-index: 4;
+	}
+	.intro-left .intro li .row, 
+	.info .host li .row {
+		padding: 5px 0;
+	}
+.intro-left .intro h4 .mark {
+	width: 45px;
+	left: -80px;
+	position:relative;
+}
+.intro-top {
+	z-index: 3;
+	top: max(0.6vw);
+	display: flex;
+	justify-content: center;
+	width: max(32vw, 390px);
+}
+	.intro-top .background {
+		width: max(32vw, 390px);
+		max-width: 740px;
+	}
+.info {
+	justify-content: center;
+	position: relative;
+	display: flex;
+}
+		.info .host {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			top: max(45px, 5vw);
+			color: #e9e8d9;
+		}
+.intro-right {
+	position: relative;
+	width: 32%;
+}
+.intro-top .host h4 {
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin: 10px 0;
+	font-size:1.3em;
+	z-index: 4;
+}
+.info .host li .row{
+	font-size:0.8em;
+}
+.intro-buttom {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: max(617px, 45vw);
+	left: min(-200px, -14vw);
+	top: min(370px, max(15.4vw, 267px));
+	z-index: 5;
+}
+	.intro-buttom .background {
+		position: relative;
+		width: min(1062px, 100%);
+	}
+
+.info .sponsor {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	font-size: 1.3em;
+	top: max(120px, 10vw);
+	left: 58%;
+	margin: 0;
+	padding: 0;
+}
+	.info .sponsor h4{
+		margin:0;
+	}
+
+@media screen and (min-width: 2048px) {
+	.info .sponsor h4,
+	.intro-top .host h4{
+		font-size:2em;
+	}
+	.intro-left .intro li .row,
+	.info .host li .row {
+		padding: 10px 0;
+		font-size:1.3em;
+	}
+	.intro-left .intro h4{
+		font-size: 2.5em;
+	}
+	.info .host{
+		gap:40px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.info{
+		flex-wrap:wrap;
+	}
+	.intro-left .background {
+		min-width: min(100%, 600px);
+	}
+	.intro-left .intro {
+		top: 90px;
+	}
+		.intro-left .intro h4 .mark {
+			width: 30px;
+			left: -80px;
+
+		}
+	.intro-right {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.intro-buttom,
+	.intro-top{
+		top:0;
+		left:0;
+		z-index:3;
+	}
+	.intro-top {
+		position: relative;
+		height: 100%;
+		align-items: flex-end;
+	}
+		.intro-top .background {
+			object-fit: contain;
+			width: 100%;
+		}
+	.info .host {
+		width: 100%;
+		top: max(44px, 11.4vw);
+	}
 }
 
-	.info .intro {
-		display: flex;
-		flex-direction: column;
-		top: 35vh;
-		left: 20vw;
-	}
-
-	.info .host {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1vh;
-		top: 20vh;
-		left: 67vw;
-		color: #e9e8d9;
-	}
-
-	.info .sponsor {
-		flex-direction: column;
-		display: flex;
-		top: 62vh;
-		left: 71.6vw;
-	}
-
-	.works .background_group {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
+.works .background_group {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
 
 		.works .background_group .background {
 			margin-top: calc(3vh + 3vw);
