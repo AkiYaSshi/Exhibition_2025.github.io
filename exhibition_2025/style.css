@@ -825,8 +825,18 @@ body {
 .traffic .right-deco {
 	display: flex;
 	position: absolute;
-	width: 100%;
+
 	height: 100%;
+}
+.traffic .left-deco{
+	width: min(582px, 50%);
+    z-index: 1;
+    left: 17%;
+}
+.traffic .right-deco{
+    width: min(500px, 50%);
+    right: 0;
+    z-index: 1;
 }
 	.traffic .left-deco .background,
 	.traffic .right-deco .background {
@@ -836,10 +846,11 @@ body {
 		width: max(516px, 50%);
 	}
 		.traffic .left-deco .background{
-			left:34%;
+			left: 34%;
+			width: 100%;
 		}
 		.traffic .right-deco .background{
-			right:0;
+			width: 100%;
 		}
 
 			.googleMap {
@@ -881,6 +892,7 @@ body {
 
 		.traffic .map .map-bg {
 			width: min(550px, 100%);
+			top: 10px;
 		}
 	.traffic .intro-bg {
 		position: absolute;
@@ -898,24 +910,41 @@ body {
 		padding: 20px;
 		border-radius:5px;
 	}
+	.traffic .left-deco{
+		left:10px
+	}
+	.traffic .left-deco .background{
+		left:0;
+		z-index:0;
+	}
+	.traffic .left-deco,
+	.traffic .right-deco,
+	.traffic .right-deco .background{
+		z-index:0;
+	}
 }
 .footer {
-	position: fixed;
-	bottom: 210px;
-	right: 2.3vw;
-	height: 50px;
-	width: 150px;
-	z-index: 10;
-	text-align: right;
+    position: fixed;
+    display: flex;
+    bottom: min(2%, 210px);
+    right: 2%;
+    width: 150px;
+    z-index: 10;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 		.footer a {
 			margin-left: 16px;
 			transition: all 0.1s;
 			opacity: 1;
+			position: relative;
+			width: min(65px, 10vw);
 		}
 
 			.footer a img {
+			    width: 100%;
 			}
 
 			.footer a:hover {
