@@ -138,7 +138,10 @@ body {
 	top: 0;
 	left: 0;
 	z-index:0;
-	background-image: url('img/tex/咖啡底紋理.png')
+	background-image: url('img/tex/咖啡底紋理.png');
+	mix-blend-mode: color-burn;
+    opacity: 70%;
+	
 }
 
 .frame {
@@ -151,6 +154,17 @@ body {
 	justify-self: center;
 	position: absolute;
 	z-index: 1;
+}
+.frame::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+	border-radius: 0px 0px 20px 20px;
+	background-image: url('img/tex/米白底紋理.webp');
 }
 
 
@@ -922,6 +936,21 @@ body {
 	.traffic .right-deco .background{
 		z-index:0;
 	}
+}
+.links .links-deco{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.links .links-deco .background{
+	bottom: 0;
+}
+.links .links-shelf{
+	top: 10%;
+    position: absolute;
+    width: 100%;
 }
 .footer {
     position: fixed;
