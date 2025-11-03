@@ -325,10 +325,10 @@ body {
 	z-index: 1;
 	position: absolute;
 	top: 0;
-	margin-bottom: 50px;
 	width: 522px;
 	aspect-ratio: 4/5;
 	left: -10vw;
+	bottom:-16px;
 }
 
 	.about .img_jarL span {
@@ -343,7 +343,7 @@ body {
 			.about .img_jarL span .background {
 				z-index: 0;
 				width: 100%;
-				height: 100%;
+				bottom:0;
 			}
 			.about .img_jarL span .background-m {
 				z-index: 1;
@@ -357,7 +357,7 @@ body {
 
 .intro_group {
 	position: absolute;
-	top: 40px;
+    bottom: 0;
 	left: 40%;
 	width: 650px;
 	min-width: 530px;
