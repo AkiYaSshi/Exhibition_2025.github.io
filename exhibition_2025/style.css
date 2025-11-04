@@ -543,7 +543,7 @@ body {
 	position: relative;
 	align-items: center;
 	margin:0;
-	font-size:1.3em;
+	font-size: 0.8em;
 	z-index: 4;
 }
 .info .host li .row{
