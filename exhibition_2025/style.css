@@ -910,10 +910,6 @@ body {
 			height:100%;
 			object-fit: contain;
 		}
-		.merch .merch-list .merch-grp .cost{
-			height:auto;
-			bottom:0;
-		}
 		.merch .bottom-banner {
 			position: absolute;
 			bottom: 0;
