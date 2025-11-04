@@ -74,7 +74,7 @@ body {
                         currently supported by all other modern browsers */
 	}
 	.title label {
-		top: 15px;
+		top: 0;
 		right: 0;
 		padding: 10px;
 	}
@@ -1235,7 +1235,7 @@ body {
 .work-section .works-container{
 	overflow-y: scroll;
 	display: flex;
-	gap:10%;
+	gap: 20px 10%;
 	justify-content: center;
 	align-items: flex-start;
 	position: relative;
@@ -1314,17 +1314,22 @@ body {
 				flex-wrap: nowrap;
 			}
 		}
-	.footer {
-		position: fixed;
-		display: flex;
-		bottom: min(2%, 210px);
-		right: 2%;
-		width: 150px;
-		z-index: 10;
-		text-align: right;
-		flex-direction: column;
-		align-items: flex-end;
+@media screen and (min-width:1496px) {
+	.work-section .works-container{
+		gap:20px 40px;
 	}
+}
+.footer {
+	position: fixed;
+	display: flex;
+	bottom: min(2%, 210px);
+	right: 2%;
+	width: 150px;
+	z-index: 10;
+	text-align: right;
+	flex-direction: column;
+	align-items: flex-end;
+}
 
 		.footer a {
 			margin-left: 16px;
