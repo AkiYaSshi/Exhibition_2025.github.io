@@ -31,7 +31,11 @@ body {
 	#works,
 	#merch,
 	#traffic,
-	#links{
+	#links,
+	#aa,
+	#md,
+	#nma
+	{
 		display:none;
 	}
 		#top:target,
@@ -40,7 +44,10 @@ body {
 		#works:target,
 		#merch:target,
 		#traffic:target,
-		#links:target {
+		#links:target,
+		#aa:target,
+		#md:target,
+		#nma:target{
 			display: block;
 		}
 
@@ -134,7 +141,8 @@ body {
 
 }
 
-.section {
+.section,
+.work-section {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -1197,6 +1205,27 @@ body {
 		display:block;
 	}
 
+}
+.work-section .title{
+	position: absolute;
+	width: 100%;
+	align-content:center;
+	justify-content:center;
+	align-items: flex-end;
+	height: 30%;
+}
+.work-section .title .title-card{
+	width: 330px;
+	margin: 5px;
+	aspect-ratio: 200/93;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.work-section .title .title-card .background{
+	height:100%;
+	object-fit:contain;
 }
 .footer {
     position: fixed;
