@@ -66,12 +66,37 @@ function createWorks(type, container, name) {
         const card = document.createElement("div");
         card.className = "card";
         card.innerHTML = `
-                            <a href="${name}-${index}" class="description" title="作品資訊">
+                            <a href="#${name}-${index}" class="description" title="作品資訊">
                                 <h2>${work.title}</h2>
                                 <img src="${work.cover}" frameborder="0" scrolling="no" allowfullscreen=allowfullscreen />
                             </a>
                         `;
 
         container.appendChild(card);
+        createDescription(name + "-" + index);
     });
+}
+
+function createDescription(_id) {
+    const style = document.createElement("style");
+    const section = document.createElement("div");
+    style.textContent = `
+        #${_id}{ 
+            display: none; 
+        }
+        #${_id}:target { 
+            display: block; 
+        }
+    `;
+
+    section.className = "work-section";
+    section.id = _id;
+    section.innerHTML = `
+                            <div class="frame">
+                            </div>
+                            <div class="noise-texture"></div>
+                        `;
+    section.appendChild(style);
+    body.appendChild(section);
+
 }

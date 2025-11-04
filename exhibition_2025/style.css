@@ -1211,11 +1211,17 @@ body {
 	}
 
 }
-.work-section .title{
+.work-page{
+	display:flex;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.work-section .title {
 	position: relative;
 	width: 100%;
-	align-content:center;
-	justify-content:center;
+	align-content: center;
+	justify-content: center;
 	align-items: flex-end;
 	height: 30%;
 }
@@ -1319,6 +1325,208 @@ body {
 		gap:20px 40px;
 	}
 }
+.work-slider{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:65%;
+	justify-content:center;
+	align-content: center;
+	align-items: center;
+	gap: 10px 0;
+}
+	.work-slider .work-cover{
+		position:relative;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:70%;
+		width:100%;
+	}
+		.work-slider .work-cover img{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			width:100%;
+			height:100%;
+			object-fit:contain;
+		}
+		.work-slider .work-cover .cover-grp {
+			width: 90%;
+			height: 90%;
+			position: absolute;
+			z-index: 1;
+		}
+		.work-slider .work-cover .cover-grp .cover {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			left:1%;
+			z-index: 1;
+		}
+		.work-slider .work-cover .work-cover-deco{
+			position:absolute;
+			width:100%;
+			height:100%;
+			object-fit:contain;
+			z-index:2;
+		}
+			.work-slider .work-cover .work-cover-deco img{
+				height:auto;
+				top:0;
+				position:absolute;
+			}
+		.work-slider .work-navi-grp{
+			position:relative;
+			width:100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+		}
+			.work-slider .work-navi-grp a{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				text-decoration:none;
+				color:#000;
+				font-size: 1.4em;
+				flex-wrap: nowrap;
+				width: 33%;
+			}
+			.work-slider .work-navi-grp .navi-bar{
+				position:relative;
+				display: flex;
+				width: 30%;
+				height: 100%;
+				min-width: 150px;
+			}
+				.work-slider .work-navi-grp .navi-bar img{
+					position:absolute;
+					width:100%;
+					height:100%;
+					object-fit:contain;
+				}
+				.work-slider .work-navi-grp a span {
+					position: relative;
+					height: 60px;
+					width: 100px;
+				}
+					.work-slider .work-navi-grp a span img{
+						position:absolute;
+						width:100%;
+						height:100%;
+						object-fit:contain
+					}
+.work-intro-grp{
+	display:flex;
+	position:relative;
+	height: 100%;
+	width: 35%;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+	.work-intro-grp .work-intro-sticker-grp {
+		display:flex;
+		justify-content:center;
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		z-index: 1;
+	}
+	.work-intro-grp .work-intro-sticker{
+		position:absolute;
+		width: auto;
+		aspect-ratio: 161/186;
+		height:60%;
+	}
+	.work-intro-grp .top-sticker,
+	.work-intro-grp .bottom-sticker {
+		position: absolute;
+		width: max(130px, 30%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+		.work-intro-grp .top-sticker{
+			top: 5px;
+			right: 3px;
+			aspect-ratio: 145 / 158;
+		}
+
+	.work-intro-grp .bottom-sticker {
+		bottom: 0;
+		aspect-ratio: 65/27;
+		width: 85%;
+		left: -22px;
+	}
+	.work-intro-grp .top-sticker img,
+	.work-intro-grp .bottom-sticker img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+		.work-intro-grp .top-sticker img, .work-intro-grp .bottom-sticker img {
+			position: relative;
+		}
+		.work-intro-grp .work-intro-sticker .background {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			z-index: 0;
+		}
+	.work-intro-grp .work-intro-sticker .work-intro-content {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		height: 80%;
+		top: 15%;
+		z-index:1;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+		.work-intro-grp .work-intro-sticker .work-intro-content .work-intro-title {
+			position: relative;
+			width: 90%;
+		}
+			.work-intro-grp .work-intro-sticker .work-intro-content .work-intro-title *{
+				margin:10px 0;
+				text-align:center;
+			}
+		.work-intro-grp .work-intro-sticker .work-intro-content p {
+			overflow-y: scroll;
+			margin: 0;
+			scrollbar-width: none;
+			width: 87%;
+		}
+		.work-intro-grp .sticker-deco {
+			position: absolute;
+			display: flex;
+			width: 100%;
+			height: 100%;
+		}
+	@media screen and (max-width:1086px) {
+		.work-slider .work-navi-grp a{
+		font-size:1em;
+	}
+		.work-slider .work-navi-grp a span{
+			width:50px;
+		}
+}
+@media screen and (max-width:714px){
+	.work-slider .work-navi-grp a {
+		font-size: 0;
+	}
+		.work-slider .work-navi-grp a span {
+			width: 30px;
+		}
+} 
 .footer {
 	position: fixed;
 	display: flex;
@@ -1331,13 +1539,13 @@ body {
 	align-items: flex-end;
 }
 
-		.footer a {
-			margin-left: 16px;
-			transition: all 0.1s;
-			opacity: 1;
-			position: relative;
-			width: min(65px, 10vw);
-		}
+.footer a {
+	margin-left: 16px;
+	transition: all 0.1s;
+	opacity: 1;
+	position: relative;
+	width: min(65px, 10vw);
+}
 
 			.footer a img {
 			    width: 100%;
