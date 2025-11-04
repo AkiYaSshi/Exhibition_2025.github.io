@@ -5,7 +5,7 @@ let currentIndex = 0;
 let isScrolling = false;
 // window.location.href = sections[sections.indexOf(window.location.hash)];
 
-// ºu°Ê¨ì«ü©w section
+// æ»¾å‹•åˆ°æŒ‡å®š section
 function scrollToSection(index) {
     if (index < 0 || index >= sections.length || isScrolling) return;
 
@@ -13,22 +13,22 @@ function scrollToSection(index) {
 
     window.location.href = sections[index];
 
-    // §ó·s URL hash¡]¥i¿ï¡^
+    // æ›´æ–° URL hashï¼ˆå¯é¸ï¼‰
     history.pushState(null, null, sections[index]);
 
     currentIndex = index;
 
-    // Á×§K³sÄòºu°Ê
+    // é¿å…é€£çºŒæ»¾å‹•
     setTimeout(() => { isScrolling = false; }, 300);
 }
 
-// ºÊÅ¥ºu½ü
+// ç›£è½æ»¾è¼ª
 window.addEventListener('wheel', (e) => {
-    const currentHash = window.location.hash || '#top'; // ¹w³]¬° #top
+    const currentHash = window.location.hash || '#top'; // é è¨­ç‚º #top
 
-    // ¥u¦³·í«e hash ¦b sections °}¦C¤¤¡A¤~¤¹³\ºu°Ê
+    // åªæœ‰ç•¶å‰ hash åœ¨ sections é™£åˆ—ä¸­ï¼Œæ‰å…è¨±æ»¾å‹•
     if (!sections.includes(currentHash)) {
-        return; // ¤£¦b°}¦C ¡÷ ª½±µ return¡A¤£°õ¦æºu°Ê
+        return; // ä¸åœ¨é™£åˆ— â†’ ç›´æŽ¥ returnï¼Œä¸åŸ·è¡Œæ»¾å‹•
     }
 
     if (e.deltaY > 0) {
@@ -38,15 +38,18 @@ window.addEventListener('wheel', (e) => {
     }
 }, { passive: false });
 
-// ¤â¾÷Ä²±±¤ä´©¡]¥i¿ï¡^
+// æ‰‹æ©Ÿè§¸æŽ§æ”¯æ´ï¼ˆå¯é¸ï¼‰
 let touchStartY = 0;
 window.addEventListener('touchstart', (e) => {
     touchStartY = e.touches[0].clientY;
 });
 window.addEventListener('touchend', (e) => {
+    if (!sections.includes(currentHash)) {
+        return; // ä¸åœ¨é™£åˆ— â†’ ç›´æŽ¥ returnï¼Œä¸åŸ·è¡Œæ»¾å‹•
+    }
     const touchEndY = e.changedTouches[0].clientY;
     const diff = touchStartY - touchEndY;
-    if (Math.abs(diff) > 20) {  // ·Æ°Ê¶ZÂ÷°÷¤j¤~Ä²µo
+    if (Math.abs(diff) > 20) {  // æ»‘å‹•è·é›¢å¤ å¤§æ‰è§¸ç™¼
         if (diff > 0) scrollToSection(currentIndex + 1);
         else scrollToSection(currentIndex - 1);
     }
@@ -57,7 +60,7 @@ window.addEventListener('load', () => {
     const index = sections.indexOf(hash);
     if (index !== -1) {
         currentIndex = index;
-        scrollToSection(index); // ½T«Oµe­±¦b¥¿½T¦ì¸m
+        scrollToSection(index); // ç¢ºä¿ç•«é¢åœ¨æ­£ç¢ºä½ç½®
     }
 });
 sections.forEach((sec, index) => {
