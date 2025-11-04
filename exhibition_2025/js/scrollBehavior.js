@@ -44,6 +44,8 @@ window.addEventListener('touchstart', (e) => {
     touchStartY = e.touches[0].clientY;
 });
 window.addEventListener('touchend', (e) => {
+    const currentHash = window.location.hash || '#top'; // 預設為 #top
+
     if (!sections.includes(currentHash)) {
         return; // 不在陣列 → 直接 return，不執行滾動
     }
