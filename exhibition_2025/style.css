@@ -455,10 +455,12 @@ body {
 	}
 }
 .intro-left {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	z-index: 4;
-	width: 50%;
+	width: 100%;
+	height: 70%;
 	min-width: 750px;
 	align-items: center;
 	align-content: center;
@@ -627,7 +629,7 @@ body {
 	}
 
 	.intro-left .intro {
-		top: 130px;
+		top: 0;
 	}
 
 		.intro-left .intro h4 .mark {
