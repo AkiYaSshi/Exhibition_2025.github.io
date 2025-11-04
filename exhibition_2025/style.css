@@ -1156,6 +1156,29 @@ body {
 	object-fit:contain;
 	position: relative;
 }
+@media screen and (max-width:600px){
+	.links .links-shelf .frame-grp{
+		flex-direction:column;
+		align-items:center;
+		position: relative;
+		height: 80%;
+	}
+	.links .links-shelf .frame-grp .links-frame{
+		width:60%;
+		height:100%;
+	}
+	.links .links-shelf .background,
+	.links .links-shelf .frame-grp .links-frame .background{
+		display:none;
+	}
+	.links .links-shelf .frame-grp .links-frame .code .background{
+		display:block;
+	}
+	.links .links-shelf .frame-grp .links-frame .background-m{
+		display:block;
+	}
+
+}
 .footer {
     position: fixed;
     display: flex;
