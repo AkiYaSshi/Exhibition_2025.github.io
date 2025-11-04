@@ -1249,7 +1249,7 @@ body {
 		position: relative;
 		display: flex;
 		border: 3px solid #444;
-		border-radius: 1vw;
+		border-radius: 10px;
 		justify-content: center;
 		width: min(95%,372px);
 		/* min-width: 372px; */
@@ -1265,7 +1265,7 @@ body {
 		height:100%;
 		justify-content: center;
 		align-items: center;
-		border-radius:1vw;
+		border-radius: 10px;
 	}
 		.work-section .works-container .card a::before {
 			content: "";
@@ -1284,7 +1284,6 @@ body {
 		.work-section .works-container .card a:hover h2{
 			opacity: 1;
 			transition: all ease 0.1s;
-			text-align: center;
 		}
 		.work-section .works-container .card a h2 {
 			opacity: 0;
@@ -1292,6 +1291,7 @@ body {
 			color:#fff8f4;
 			z-index: 1;
 			position: absolute;
+			text-align: center;
 		}
 
 		.work-section .works-container .card a img {
@@ -1299,7 +1299,7 @@ body {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			border-radius: 1vw;
+			border-radius: 10px;
 		}
 		@media screen and (max-width:900px){
 			.work-section .title{height: auto;margin: 15px 0;}
