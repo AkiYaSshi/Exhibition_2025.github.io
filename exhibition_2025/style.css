@@ -94,6 +94,17 @@ body {
 	.title label {
 		display: block;
 	}
+	.home{
+		left: 5px !important;
+		
+	}
+	.home a{
+		font-size:2em !important;
+	}
+	.home a .descirption{
+		padding:3px !important;
+		font-size:0.3em !important;
+	}
 
 	#burger:checked + .header {
 		z-index: 11;
@@ -170,7 +181,6 @@ body {
 
 	.home {
 		display: flex;
-		gap: 0.9vw;
 		align-items: center;
 		position: fixed;
 		top: 10px;
@@ -1129,6 +1139,7 @@ body {
 	/* height:100%; */
 	display:flex;
 	justify-content: center;
+	gap: 20px;
 }
 .links .links-shelf .frame-grp .links-frame{
 	position: relative;
