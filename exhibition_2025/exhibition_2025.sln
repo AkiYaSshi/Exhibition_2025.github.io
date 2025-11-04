@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{02EA681E-C7D8-
 		js\jquery.fullPage.css = js\jquery.fullPage.css
 		js\jquery.fullPage.min.js = js\jquery.fullPage.min.js
 		js\map.js = js\map.js
+		scrollBehavior.js = scrollBehavior.js
+		workCard.js = workCard.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{3576F010-7467-4194-B6F5-FF820016BAB4}"
