@@ -460,6 +460,8 @@ body {
 	z-index: 4;
 	width: 50%;
 	min-width: 750px;
+	align-items: center;
+	align-content: center;
 }
 	.intro-left .intro {
 		position: relative;
@@ -691,7 +693,7 @@ body {
 		flex-direction: column;
 	}
 	.intro-left .intro {
-		top: 70px;
+		top: auto;
 		height: auto;
 		position: absolute;
 	}
@@ -702,8 +704,12 @@ body {
 		position: relative;
 	}
 		.intro-left .background {
-			width: 400px;
+			width: 100%;
 			min-width:0;
+			height: 100%;
+			/* padding: 10px; */
+			top: 0;
+			object-fit: contain;
 		}
 		.intro-left .intro h4 {
 			font-size: 1em;
@@ -734,8 +740,8 @@ body {
 		gap:10px;
 	}
 	.intro-top {
-		width: 100%;
-		height: 50%;
+		/* width: 100%; */
+		/* height: 50%; */
 	}
 	.intro-top span{
 		bottom: auto;
@@ -744,8 +750,8 @@ body {
 	.intro-buttom {
 		top: auto;
 		left: auto;
-		width: 100%;
-		height: 50%;
+		/* width: 100%; */
+		/* height: 50%; */
 		position: relative;
 	}
 	.info .sponsor{
@@ -1045,7 +1051,7 @@ body {
 	}
 
 		.traffic .map .map-bg {
-			width: min(550px, 100%);
+			width: min(460px, 100%);
 			top: 10px;
 		}
 	.traffic .intro {
