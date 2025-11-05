@@ -1340,17 +1340,24 @@ body {
 			border-radius: 10px;
 		}
 		@media screen and (max-width:900px){
-			.work-section .title{height: auto;margin: 15px 0;}
-			.work-section .works-container {
-				height: 65%;
-				position: relative;
-				flex-direction: column;
-				gap: 10px;
-				justify-content: flex-start;
-				align-items: center;
-				align-content: center;
-				flex-wrap: nowrap;
+			.work-section .title{
+				height: auto;
+				margin: 3px 0;
+				flex-wrap:wrap;
 			}
+				.work-section .title .title-card {
+					width: 120px;
+				}
+				.work-section .works-container {
+					height: 65%;
+					position: relative;
+					flex-direction: column;
+					gap: 10px;
+					justify-content: flex-start;
+					align-items: center;
+					align-content: center;
+					flex-wrap: nowrap;
+				}
 		}
 @media screen and (min-width:1496px) {
 	.work-section .works-container{
