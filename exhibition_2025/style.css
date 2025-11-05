@@ -236,6 +236,7 @@ body {
 }
 	.main_icon .background {
 		height: 100%;
+		width:100%;
 		object-fit: contain;
 	}
 
@@ -315,8 +316,20 @@ body {
 		display: flex;
 		margin-bottom: 3vw;
 	}
-
-.about{
+.main_icon .room{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+	.main_icon .room img{
+		position:relative;
+		width:95%;
+		height:95%;
+	}
+.about {
 	display: flex;
 }
 .about .intro {
