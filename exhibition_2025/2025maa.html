@@ -4,84 +4,22 @@
     <title>解壓縮肝麻店 - 第貳拾壹屆多媒系展</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="js/google_map.js"></script>
-    <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
     <script src="js/map.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" />
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-        window.location.hash = (window.location.hash == "") ? '#top' : window.location.hash;
 
-        const sections = ['#top', '#about', '#info', '#works', '#merch', '#traffic', '#links'];
-        let currentIndex = 0;
-        let isScrolling = false;
-
-        window.location.href = sections[sections.indexOf(window.location.hash)];
-
-        // 滾動到指定 section
-        function scrollToSection(index) {
-            if (index < 0 || index >= sections.length || isScrolling) return;
-
-            isScrolling = true;
-
-            window.location.href = sections[index];
-
-            // 更新 URL hash（可選）
-            history.pushState(null, null, sections[index]);
-
-            currentIndex = index;
-
-            // 避免連續滾動
-            setTimeout(() => { isScrolling = false; }, 300);
-        }
-
-        // 監聽滾輪
-        window.addEventListener('wheel', (e) => {
-            if (e.deltaY > 0) {
-                // 往下滾 → 下一個
-                scrollToSection(currentIndex + 1);
-            } else if (e.deltaY < 0) {
-                // 往上滾 → 上一個
-                scrollToSection(currentIndex - 1);
-            }
-        });
-
-        // 手機觸控支援（可選）
-        let touchStartY = 0;
-        window.addEventListener('touchstart', (e) => {
-            touchStartY = e.touches[0].clientY;
-        });
-        window.addEventListener('touchend', (e) => {
-            const touchEndY = e.changedTouches[0].clientY;
-            const diff = touchStartY - touchEndY;
-            if (Math.abs(diff) > 20) {  // 滑動距離夠大才觸發
-                if (diff > 0) scrollToSection(currentIndex + 1);
-                else scrollToSection(currentIndex - 1);
-            }
-        });
-
-        // 頁面載入時，根據 URL hash 定位
-        window.addEventListener('load', () => {
-            const hash = window.location.hash;
-            const index = sections.indexOf(hash);
-            if (index !== -1) {
-                currentIndex = index;
-                scrollToSection(index);
-            }
-        });
-    </script>
     <style>
         @import url("style.css");
     </style>
 </head>
 
 <body>
-    
+
     <div class="title">
         <div class="home">
             <a href="#top" id="homelink">
@@ -189,18 +127,19 @@
                 <div class="intro-right">
                     <div class="intro-top">
                         <span>
-                        <img class="background" src="img/03/3-02.png" />
-                        <ul class="host">
-                            <h4>主辦單位</h4>
-                            <li>
-                                <div class="row">【主辦單位】國立臺灣藝術大學</div>
-                                <div class="row">【協辦單位】國立臺灣藝術大學設計學院</div>
-                                <div class="row">
-                                    【承辦單位】國立臺灣藝術大學
-                                    <br />　　　　　　多媒體動畫藝術學系暨系學會
-                                </div>
-                            </li>
-                        </ul></span>
+                            <img class="background" src="img/03/3-02.png" />
+                            <ul class="host">
+                                <h4>主辦單位</h4>
+                                <li>
+                                    <div class="row">【主辦單位】國立臺灣藝術大學</div>
+                                    <div class="row">【協辦單位】國立臺灣藝術大學設計學院</div>
+                                    <div class="row">
+                                        【承辦單位】國立臺灣藝術大學
+                                        <br />　　　　　　多媒體動畫藝術學系暨系學會
+                                    </div>
+                                </li>
+                            </ul>
+                        </span>
                     </div>
                     <div class="intro-buttom">
                         <img class="background" src="img/03/3-01.png" />
@@ -212,7 +151,7 @@
                                 </span>
                                 <span class="icon">
                                     <img src="img/03/icon-02.png" />
-                                 </span>
+                                </span>
                                 台藝大學生會
                             </li>
                         </ul>
@@ -274,19 +213,15 @@
                 <div class="merch-list">
                     <div class="merch-grp">
                         <img src="img/05/merch-01.png" />
-                        <img class="cost" src="img/05/價格表/merch-01.png" />
                     </div>
                     <div class="merch-grp">
                         <img src="img/05/merch-02.png" />
-                        <img class="cost" src="img/05/價格表/merch-02.png" />
                     </div>
                     <div class="merch-grp">
                         <img src="img/05/merch-03.png" />
-                        <img class="cost" src="img/05/價格表/merch-03.png" />
                     </div>
                     <div class="merch-grp">
                         <img src="img/05/merch-04.png" />
-                        <img class="cost" src="img/05/價格表/merch-04.png" />
                     </div>
                 </div>
             </div>
@@ -367,7 +302,7 @@
                         </span>
                         <span class="links-frame">
                             <span class="code">
-                                <img class="background" src="img/07/ig.png" />
+                                <img class="background" src="img/07/IG.png" />
                             </span>
                             <img class="background" src="img/07/7-03.png" />
                             <img class="background-m" src="img/07/7-03-m.png" />
@@ -378,9 +313,90 @@
         </div>
         <div class="noise-texture"></div>
     </div>
+    <div class="work-section" id="aa-1">
+        <div class="frame">
+            <div class="work-page">
+                <div class="work-slider">
+                    <div class="work-cover">
+                        <span class="cover-grp">
+                            <img class="cover" src="https://iili.io/KP0GbKx.jpg" />
+                        </span>
+                        <img class="background" src="img/04/4-3-07.png" />
+                        <span class="work-cover-deco">
+                            <img class="background" src="img/04/4-3-08.png" />
+                        </span>
+                    </div>
+                    <div class="work-navi-grp">
+                        <a href="#aa-0">
+                            <span class="arrow">
+                                <img class="background" src="img/04/4-3-01.png" />
+                            </span>
+                            上一個作品
+                        </a>
+                        <span class="navi-bar">
+                            <img class="background" src="img/04/4-3-04.png" />
+                        </span>
+                        <a href="#aa-2">
+                            下一個作品
+                            <span class="arrow">
+                                <img class="background" src="img/04/4-3-02.png" />
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-intro-grp">
+                    <div class="work-intro-sticker-grp">
+                        <div class="work-intro-sticker">
+                            <img class="background" src="img/04/4-3-03.png" />
+                            <div class="work-intro-content">
+                                <div class="work-intro-title">
+                                    <h3>最後一夾 ONE COIN AND A DREAM</h3>
+                                    <h4>作者？？？</h4>
+                                </div>
+                                <p>
+                                    故事大綱:
+
+                                    柴犬在遊樂場玩夾娃娃機但一直失敗，發現剩下最後一枚硬幣的牠生氣地踢飛腳邊的罐子，結果引發了一連串連鎖效應。
 
 
 
+                                    創作理念:
+
+                                    相信大家日常生活中都有去過遊樂場，玩過夾娃娃機的經驗，且在這短短的遊玩時間內經歷充滿信心、緊張、勝利的喜悅及失敗後再玩一次，而要夾到娃娃不只要技巧，運氣也很重要。因此在這個作品中，我想藉由連鎖反應的方式來描繪夾娃娃時，運氣帶來的影響。
+
+
+
+                                    設計思路:
+
+                                    對我來說，遊樂場帶有一種復古的氣息，所以使用了像素與7、80年代的視覺風格來營造懷舊感。也用於實驗像素風格運用在劇情動畫中的可行性。
+
+                                    而柴犬有個性，外表討喜，也是網路文化及梗圖迷因的常客，在以喜劇為主的的故事中作為主角顯得平易近人，讓人更有帶入感。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sticker-deco">
+                        <span class="top-sticker">
+                            <img class="background" src="img/04/4-3-05.png" />
+                        </span>
+                        <span class="bottom-sticker">
+                            <img class="background" src="img/04/4-3-6.png" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="noise-texture"></div>
+        <style>
+            #aa-1 {
+                display: none;
+            }
+
+                #aa-1:target {
+                    display: block;
+                }
+        </style>
+    </div>
     <!--<img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw==' style="background-image:url(img/title.svg);z-index:-20;" />
     <img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw==' style="background-image:url(img/framel.svg);;z-index:-20;" />
     <img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw==' style="background-image:url(img/framer.svg);;z-index:-20;" />-->
@@ -391,8 +407,6 @@
     </div>
 
 </body>
-
-
-
-
+<script src="js/scrollBehavior.js"></script>
+<script src="js/workCard.js"></script>
 </html>
