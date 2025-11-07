@@ -47,114 +47,118 @@
     {
       "title": "RED&BLUE",
       "cover": ["https://iili.io/KP0GiN9.jpg",
-"https://iili.io/KtmzcOb.jpg",
-"https://iili.io/Ktmzlbj.jpg",
-"https://iili.io/Ktmz1zx.jpg",
-"https://iili.io/Ktmz5g9.jpg",
-"https://iili.io/KtmzVqB.jpg"],
+                "https://iili.io/KtmzcOb.jpg",
+                "https://iili.io/Ktmzlbj.jpg",
+                "https://iili.io/Ktmz1zx.jpg",
+                "https://iili.io/Ktmz5g9.jpg",
+                "https://iili.io/KtmzVqB.jpg"],
       "author": "楊銘沂 簡卍束 潘寀瑩 黃芷晴 張復昇 李桀 張貽晴",
       "description": "主角踏上尋找失蹤朋友的旅途，在與茫茫人海的相遇中，他遇見了一位被染色的人，因為違背社會道德觀而遭到路人大聲斥責。走著走著，他進入了一片森林，被一朵外型奇異卻有著迷人香味的花朵吸引，正在陶醉時，瞥見朋友的身影，緊追上去又來到了一片花田，他看見了朋友與朋友的戀人，朋友露出了他從未見過的開朗笑容，以及他從未見過的美麗靈魂，他忽然明白了愛是什麼，選擇祝福默默離去。"
     },
     {
       "title": "海的對面",
       "cover": ["https://iili.io/KP0Ggcl.png",
-"https://iili.io/Ktm6jVt.png",
-"https://iili.io/Ktm6WDN.png",
-"https://iili.io/Ktm61UJ.png",
-"https://iili.io/Ktm6hxI.png",
-"https://iili.io/Ktm68Jf.png"],
+                "https://iili.io/Ktm6jVt.png",
+                "https://iili.io/Ktm6WDN.png",
+                "https://iili.io/Ktm61UJ.png",
+                "https://iili.io/Ktm6hxI.png",
+                "https://iili.io/Ktm68Jf.png"],
       "author": "徐瑋伶 詹佾臻 謝恩熙 林郁甯 黃湘玲 許采琳",
       "description": "男主志雄生活在基隆，無論時間風景如何變換，他始終都深愛著自己的家鄉和阿嬤，影片聚焦在男主身上，傳遞給觀眾基隆的美麗和祖孫之間深厚的感情。"
     },
     {
       "title": "冰箱小偷 Fridge Theif",
-      "cover": ["https://iili.io/KP0Gj9I.jpg","https://iili.io/Ktm6qo7.jpg",
-"https://iili.io/Ktm6BV9.jpg",
-"https://iili.io/Ktm6CPe.jpg",
-"https://iili.io/Ktm6FN2.jpg",
-"https://iili.io/Ktm6oKu.jpg"],
+      "cover": ["https://iili.io/KP0Gj9I.jpg",                "https://iili.io/Ktm6qo7.jpg",
+                "https://iili.io/Ktm6BV9.jpg",
+                "https://iili.io/Ktm6CPe.jpg",
+                "https://iili.io/Ktm6FN2.jpg",
+                "https://iili.io/Ktm6oKu.jpg"],
       "author": "楊銘沂 陳姿婷 許杏萍 張貽晴 吳庭箏 彭妤君",
       "description": "同住在一起難免會發生爭執或讓對方困擾的事情，警惕有同居生活的人應尊重彼此的生活空間，不要擅自偷吃室友的食物造成別人的不愉快。"
     },
     {
       "title": "三菜一湯",
       "cover": ["https://iili.io/KP0GvMG.png"
-"https://iili.io/Ktm6tJj.png",
-"https://iili.io/Ktm6bOQ.png",
-"https://iili.io/Ktm6Ps9.png",
-"https://iili.io/Ktm6QUb.png",
-"https://iili.io/KtmPdqF.png"],
+                "https://iili.io/Ktm6tJj.png",
+                "https://iili.io/Ktm6bOQ.png",
+                "https://iili.io/Ktm6Ps9.png",
+                "https://iili.io/Ktm6QUb.png",
+                "https://iili.io/KtmPdqF.png"],
       "author": "黃少萱 楊凱若 簡岑妍 黃湘玲 連愷筠 王嘉琳",
       "description": "住入大學宿舍第一天，他捧著便當回想起前一晚與母親晚餐時光，心中滿載未能好好道別的遺憾。"
     },
     {
       "title": "Sweet Dream",
-      "cover": ["https://iili.io/KP0GNwX.png","https://iili.io/Ktmbsql.png",
-"https://iili.io/Ktmb6Xf.png",
-"https://iili.io/KtmbL12.png",
-"https://iili.io/Ktmb4zG.png",
-"https://iili.io/KtmbQgS.png"],
+      "cover": ["https://iili.io/KP0GNwX.png",
+                "https://iili.io/Ktmbsql.png",
+                "https://iili.io/Ktmb6Xf.png",
+                "https://iili.io/KtmbL12.png",
+                "https://iili.io/Ktmb4zG.png",
+                "https://iili.io/KtmbQgS.png"],
       "author": "陳彥妤 張方恩 盧妮涵 龔詠心 黃敬淳 謝慈芸",
       "description": "詩瑀跟著朋友晴雯一起回到老家收拾爸爸的遺物，晴雯卻在過程中挖掘出爸爸的秘密……"
     },
     {
       "title": "The Lucky One",
-      "cover": ["https://iili.io/KP0Gkns.png","https://iili.io/KtmbGJ1.png",
-"https://iili.io/Ktmb00B.png",
-"https://iili.io/Ktmb1UP.png",
-"https://iili.io/KtmbVOg.png",
-"https://iili.io/KtmbWba.png"],
+      "cover": ["https://iili.io/KP0Gkns.png",
+                "https://iili.io/KtmbGJ1.png",
+                "https://iili.io/Ktmb00B.png",
+                "https://iili.io/Ktmb1UP.png",
+                "https://iili.io/KtmbVOg.png",
+                "https://iili.io/KtmbWba.png"],
       "author": "吳于晴 盧妮涵 龔詠心 黃敬淳 謝慈芸 王嘉琳",
       "description": "超級幸運的小豪與衰運纏身的阿陳相遇，為了讓自己的生活增添更多有趣的事件，小豪將一部分的厄運搶了過來，卻意外發現有了厄運後的生活似乎不如他預料中的好玩......"
     },
     {
       "title": "黑鳶",
-      "cover": ["https://iili.io/KP0GEMJ.jpg","https://iili.io/KtmmHLx.jpg",
-"https://iili.io/Ktmm9Xj.jpg",
-"https://iili.io/Ktmbmmu.jpg",
-"https://iili.io/Ktmbyzb.jpg",
-"https://iili.io/Ktmm21V.jpg"],
+      "cover": ["https://iili.io/KP0GEMJ.jpg",
+                "https://iili.io/KtmmHLx.jpg",
+                "https://iili.io/Ktmm9Xj.jpg",
+                "https://iili.io/Ktmbmmu.jpg",
+                "https://iili.io/Ktmbyzb.jpg",
+                "https://iili.io/Ktmm21V.jpg"],
       "author": "簡岑妍 曾之云 王千昀  連愷筠 歐佑漢 廖弈銓 盧萬鈞",
       "description": "故事大綱<br />黑鳶是基隆市的象徵，常常優雅地翱翔於城市的天空，與這座港口相伴相生。故事的主角小黑鳶，在一次意外中與家人失散，因此展開了在基隆市的冒險旅程。一路上，小黑鳶結識了其他黑鳶，也遇見了形形色色的人們，從他們的幫助中獲得了力量，逐步成長。經歷了種種挑戰與考驗後，小黑鳶最終回到了家人的懷抱。<br /><br />創作理念<br />期望用鳥類的視角帶出基隆的城市之美，讓觀眾在觀看故事的同時，感受城市與自然共生的氛圍。<br /><br />設計思路<br />以「樸實」、「單純」為發想標籤，設定了以動物作為主角、全片無台詞、並記錄城市景點的方向，最終我們將目標聚焦在基隆的市鳥——黑鳶。<br /><br />延續最初的設計概念，我們的角色造型走向簡約，以橢圓為主要造型基礎，搭配幾何形狀的點綴，形成俐落而不失立體感的角色外觀。全片以無線條繪製，透過色塊之間的變化與層次，增添角色與場景的生動性。"
     },
     {
       "title": "初剪",
-      "cover": ["https://iili.io/KP0GcwF.png","https://iili.io/KtmDmVR.png",
-"https://iili.io/KtmbJSt.png",
-"https://iili.io/KtmbHlI.png",
-"https://iili.io/KtmbFNs.png",
-"https://iili.io/KtmbuRe.png"],
+      "cover": ["https://iili.io/KP0GcwF.png",                "https://iili.io/KtmDmVR.png",
+                "https://iili.io/KtmbJSt.png",
+                "https://iili.io/KtmbHlI.png",
+                "https://iili.io/KtmbFNs.png",
+                "https://iili.io/KtmbuRe.png"],
       "author": "陳姿婷 鄧羽婷 莊子濬 施宸羲",
       "description": "人生就像剪頭髮一樣，忘掉所失去的，洗去回憶，接受嶄新的自己向前看，沒事、不要緊。"
     },
     {
       "title": "流星祭",
-      "cover": ["https://iili.io/KP0G58B.jpg",                "https://iili.io/KtmDXP2.jpg",
-"https://iili.io/KtmDWMl.jpg",
-"https://iili.io/KtmDVn4.jpg",
-"https://iili.io/KtmDGtf.jpg",
-"https://iili.io/KtmDUox.jpg"],
+      "cover": ["https://iili.io/KP0G58B.jpg",                "https://iili.io/KtmDXP2.jpg",
+                "https://iili.io/KtmDWMl.jpg",
+                "https://iili.io/KtmDVn4.jpg",
+                "https://iili.io/KtmDGtf.jpg",
+                "https://iili.io/KtmDUox.jpg"],
       "author": "徐瑋伶 詹佾臻 謝恩熙 林文景 賴卜京 林郁甯 楊媞安",
       "description": "嚮往著流星祭的小恩，第一次來到主持流星祭的「主星——R星」上幫忙，這裡的居民都充滿熱情、勤奮地為了祭典做準備。正當小恩陶醉於這熱鬧歡騰的氛圍時，他看見了流星祭的另一種景象……"
     },
     {
       "title": "好呷の匆抓餅",
-      "cover": ["https://iili.io/KP0GlZg.png","https://iili.io/KtpHcS2.png",
-"https://iili.io/KtpH5Pf.png",
-"https://iili.io/KtpHTtn.png",
-"https://iili.io/KtpHacl.png",
-"https://iili.io/KtpHWMb.png",
-"https://iili.io/KtpHkAP.png"],
+      "cover": ["https://iili.io/KP0GlZg.png",
+                "https://iili.io/KtpHcS2.png",
+                "https://iili.io/KtpH5Pf.png",
+                "https://iili.io/KtpHTtn.png",
+                "https://iili.io/KtpHacl.png",
+                "https://iili.io/KtpHWMb.png",
+                "https://iili.io/KtpHkAP.png"],
       "author": "吳于晴 林芮妤 盧韻方 張立妍 王千昀",
       "description": "在這寧靜的清晨街道，帥氣的警察柏翰正在監視著雜貨店內可疑的交易活動。<br />當他準備採取行動時，一股強大的力量拽住了他⋯⋯<br /><br />一個老阿婆慈祥微笑：「帥哥，一個蔥抓餅加蛋！」<br />這不是意外，而是日常。因為柏翰，是正義警察，也是偽裝成蔥抓餅攤販的臥底。<br />在台灣大街小巷，他不僅要應對罪犯的機巧，<br />更得面對阿婆、阻撓他的小弟以及各種荒謬的日常突發狀況。<br /><br />然而在這些荒唐搞笑中，柏翰也不斷被迫面對一個更深層的問題：<br />正義與現實、夢想與社會期待之間的矛盾。<br /><br />「夢想和社會期待，是對立的嗎？」<br /><br />本作想以高概念喜劇包裝台灣年輕一輩的議題：<br />在亞洲文化與家庭價值中成長的我們，往往被期望走上<br />「老一輩所期望的人生道路」"
     },
     {
       "title": "你的第一個記憶是什麼",
-      "cover": ["https://iili.io/KP0Gau1.png","https://iili.io/KtmDNS9.png",
-"https://iili.io/KtmDe9e.png",
-"https://iili.io/Ktmb2HX.png",
-"https://iili.io/KtmbKDG.png",
-"https://iili.io/KtmbBV4.png"],
+      "cover": ["https://iili.io/KP0Gau1.png",                "https://iili.io/KtmDNS9.png",
+                "https://iili.io/KtmDe9e.png",
+                "https://iili.io/Ktmb2HX.png",
+                "https://iili.io/KtmbKDG.png",
+                "https://iili.io/KtmbBV4.png"],
       "author": "林雨竺",
       "description": "我出生在飛快發展的2000年代初，童年的事物早已消失不見，有的時候看到老照片或是還保留下來的舊事物都會讓我產生一種難以言說的情緒。<br />我們賦予物品和環境的記憶和情感，看到過去的事物就像找到了一部分自己。<br />本作通過採訪錄音拼接出人們對於童年記憶的追尋，對舊時光的嚮往這一集體心理，復刻懷舊的，夢境般的，屬於亞洲的情感記憶。"
     }
