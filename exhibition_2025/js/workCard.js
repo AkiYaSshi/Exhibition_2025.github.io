@@ -100,9 +100,9 @@ function createDescription(type, name, index, work) {
     const cover = work.cover;
     console.log(cover);
     let covers = "";
-
-    cover.forEach((img, index) => {
-        covers += `<img class="cover${index = 0 ? " active" : ""}" src="${img}" alt="cover ${index + 1}" />`;
+    cover.forEach((img, i) => {
+        const active = i == 0 ? " active" : "";
+        covers += `<img class="cover${active}" src="${img}" alt="cover ${i + 1}" />`;
     });
 
     section.className = "work-section";
