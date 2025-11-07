@@ -1422,7 +1422,6 @@ body {
     position: relative;
     left: 1%; /* 保留你原本的偏移 */
     opacity: 0;
-    transition: opacity 0.5s ease;
 }
 
 .work-cover .cover.active {
@@ -1432,6 +1431,7 @@ body {
 
 /* 按鈕樣式 */
 .carousel-btn {
+    z-index: 2;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1454,6 +1454,22 @@ body {
 }
 .prev-btn { left: 10px; }
 .next-btn { right: 10px; }
+			.next-btn span:hover{
+				color:#bbb;
+				transform: translateX(2px);
+			}
+			.prev-btn span:hover{
+				color:#bbb;
+				transform: translateX(-2px);
+			}
+			.next-btn span:active{
+				color:#777;
+				transform: translateX(1px);
+			}
+			.prev-btn span:active{
+				color:#777;
+				transform: translateX(-1px);
+			}
 
 /* 圓點指示器 */
 .carousel-dots {
@@ -1507,6 +1523,12 @@ body {
 				font-size: 1.4em;
 				flex-wrap: nowrap;
 				width: 33%;
+			}
+			.work-slider .work-navi-grp a:hover{
+				transform:translateY(-2px) translateX(-1px);
+			}
+			.work-slider .work-navi-grp a:active{
+				transform:translateY(2px) translateX(1px);
 			}
 			.work-slider .work-navi-grp .navi-bar{
 				position:relative;

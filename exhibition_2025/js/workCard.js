@@ -98,7 +98,6 @@ function createDescription(type, name, index, work) {
         }
     `;
     const cover = work.cover;
-    console.log(cover);
     let covers = "";
     cover.forEach((img, i) => {
         const active = i == 0 ? " active" : "";
@@ -181,9 +180,7 @@ function createDescription(type, name, index, work) {
     section.appendChild(style);
     body.appendChild(section);
 
-    console.log(`${window.location.hash} == #${section.id}`);
     if (window.location.hash == `#${section.id}`) {
-        console.log(`${window.location.href} to #${name}`);
         window.location.href = `#${section.id}`;
     }
 }

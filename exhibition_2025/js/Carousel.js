@@ -1,48 +1,43 @@
     // JavaScript source code
 window.addEventListener('load', function () {
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.querySelectorAll('.cover'));
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const dotsContainer = document.querySelector('.carousel-dots');
 
-    let currentIndex = 0;
-    const totalSlides = slides.length;
-
-    // 創建圓點
-    slides.forEach((_, i) => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        if (i == 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(i));
-        dotsContainer.appendChild(dot);
+    const body = document.querySelector('body');
+    const containers = body.querySelectorAll('.carousel-container');
+    let slides_grp = [],tracks_grp = [], prevBtns = [], nextBtns = [], currentIndexs = [] ,totalSlides = [];
+    //第一層
+    containers.forEach((container) => {
+        tracks_grp.push(container.querySelector('.carousel-track'));
+        prevBtns.push(container.querySelector('.prev-btn'));
+        nextBtns.push(container.querySelector('.next-btn'));
+    });
+    //第二層
+    tracks_grp.forEach((tracks) => {
+        slides_grp.push(Array.from(tracks.querySelectorAll('.cover')));
+    });
+    slides_grp.forEach((slides) => {
+        totalSlides.push(slides.length);
+        currentIndexs.push(0);
     });
 
-    const dots = document.querySelectorAll('.dot');
-
-    function updateCarousel() {
+    function updateCarousel(target) {
         // 切換 active 圖片
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i == currentIndex);
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i == currentIndex);
+        slides_grp[target].forEach((slide, index) => {
+            slide.classList.toggle('active', index == currentIndexs[target]);
         });
     }
 
-    function goToSlide(index) {
-        currentIndex = (index + totalSlides) % totalSlides;
-        updateCarousel();
+    function goToSlide(index, target) {
+        currentIndexs[target] = (index + totalSlides[target]) % totalSlides[target];
+        updateCarousel(target);
     }
 
-    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
-    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
-
-    // 自動播放（可選）
-    // let autoPlay = setInterval(() => goToSlide(currentIndex + 1), 4000);
-    // document.querySelector('.carousel-container').addEventListener('mouseenter', () => clearInterval(autoPlay));
-    // document.querySelector('.carousel-container').addEventListener('mouseleave', () => autoPlay = setInterval(() => goToSlide(currentIndex + 1), 4000));
-
-    // 初始化
-    updateCarousel();
+    prevBtns.forEach((prevBtn, i) => {
+        prevBtn.addEventListener('click', () => goToSlide((currentIndexs[i] - 1), i));
+    });
+    nextBtns.forEach((nextBtn, i) => {
+        nextBtn.addEventListener('click', () => goToSlide((currentIndexs[i] + 1), i));
+    });
+    containers.forEach((container, index) => {
+        updateCarousel(index);
+    });
 });
