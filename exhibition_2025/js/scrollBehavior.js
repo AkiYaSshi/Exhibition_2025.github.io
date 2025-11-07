@@ -3,7 +3,6 @@ window.location.hash = (window.location.hash == "") ? '#top' : window.location.h
 const sections = ['#top', '#about', '#info', '#works', '#merch', '#traffic', '#links'];
 let currentIndex = 0;
 let isScrolling = false;
-// window.location.href = sections[sections.indexOf(window.location.hash)];
 
 // 滾動到指定 section
 function scrollToSection(index) {
@@ -44,7 +43,7 @@ window.addEventListener('touchstart', (e) => {
     touchStartY = e.touches[0].clientY;
 });
 window.addEventListener('touchend', (e) => {
-    const currentHash = window.location.hash || '#top'; // 預設為 #top
+    const currentHash = window.location.hash || '#top';
 
     if (!sections.includes(currentHash)) {
         return; // 不在陣列 → 直接 return，不執行滾動
