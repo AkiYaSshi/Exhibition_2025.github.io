@@ -2,7 +2,12 @@
   "videos": [
     {
       "title": "Under Spotlight",
-      "cover": "https://iili.io/KP0GpSV.png",
+      "cover": ["https://iili.io/KP0GpSV.png", 
+                "https://iili.io/KtDQFQS.png",
+                "https://iili.io/KtDQ3j2.png",
+                "https://iili.io/KtDQujV.png",
+                "https://iili.io/KtDQxvj.png",
+                "https://iili.io/KtDQ5CP.png"],
       "author": "徐晨嘉 簡卍束 潘寀瑩 羅蕾夏 莊子濬 洪蘊晴",
       "description": "在昏暗的下水道中，三隻個性迥異的鼠兄弟意外聽見一段悅耳的琴聲。他們興奮又好奇，紛紛猜想是哪位高雅的大師在地面演奏。懷抱著對美好事物的渴望，他們勇敢地爬上地面，卻發現那位演奏者竟是一位流浪漢。儘管真相出乎意料，三兄弟並未失望，反而由衷地為他鼓掌，並與他一同度過了一個溫暖而美好的夜晚。本片以幽默與詩意交織的方式，傳達對階級與偏見的溫柔回應，提醒我們美與善意從不分身份與外表。"
     },
