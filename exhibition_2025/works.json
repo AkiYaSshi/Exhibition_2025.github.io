@@ -78,7 +78,7 @@
     },
     {
       "title": "三菜一湯",
-      "cover": ["https://iili.io/KP0GvMG.png"
+      "cover": ["https://iili.io/KP0GvMG.png",
                 "https://iili.io/Ktm6tJj.png",
                 "https://iili.io/Ktm6bOQ.png",
                 "https://iili.io/Ktm6Ps9.png",
@@ -234,7 +234,12 @@
     },
     {
       "title": "Puff Bump",
-      "cover": "https://iili.io/KP1T0as.png",
+      "cover": ["https://iili.io/KP1T0as.png",
+                "https://iili.io/KtpjygI.png",
+                "https://iili.io/KtpwHJt.png",
+                "https://iili.io/Ktpjp0N.png",
+                "https://iili.io/Ktpjmfp.png",
+                "https://iili.io/KtpwngS.png"],
       "author": "張妙瑄 蕭心柔 楊定雄",
       "description": "《Puff Bump》是一款支援 1 至 2 名玩家的 3D 派對遊戲。玩家們將來到一間以「可愛動物系麵包」聞名的烘焙坊，而其中的鎮店招牌——「世界第一美味泡芙」每天僅限量推出兩種口味，引發一場場熱鬧的搶奪戰！<br />透過左側類比搖桿操控控制點，並按下X 鍵對麵包盤施力，以槓桿原理改變平衡並影響周遭麵包的動向。你的目標是盡可能守護泡芙，並讓泡芙們吃下奶油來壯大泡芙軍團。不過務必小心，其他客人隨時可能丟下炸彈包，掀起一場爆笑混戰！"
     },
