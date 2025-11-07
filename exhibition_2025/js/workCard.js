@@ -97,6 +97,13 @@ function createDescription(type, name, index, work) {
             display: block; 
         }
     `;
+    const cover = work.cover;
+    console.log(cover);
+    let covers = "";
+
+    cover.forEach((img, index) => {
+        covers += `<img class="cover${index = 0 ? " active" : ""}" src="${img}" alt="cover ${index + 1}" />`;
+    });
 
     section.className = "work-section";
     section.id = `${name}-${index}`;
@@ -105,9 +112,23 @@ function createDescription(type, name, index, work) {
                                 <div class="work-page">
                                     <div class="work-slider">
                                         <div class="work-cover">
-                                            <span class="cover-grp">
-                                                <img class="cover" src="${work.cover}" />
-                                            </span>
+                                            <div class="carousel-container">
+                                                <div class="carousel-track">
+                                                    ${covers}
+                                                </div>
+                                                <button class="carousel-btn prev-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        chevron_left
+                                                    </span></button>
+                                                <button class="carousel-btn next-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        chevron_right
+                                                    </span></button>
+                                                </button>
+        
+                                                <!-- 圓點指示器（可選） -->
+                                                <div class="carousel-dots"></div>
+                                            </div>                                            
                                             <img class="background" src="img/04/4-3-07.png" />
                                             <span class="work-cover-deco">
                                                 <img class="background" src="img/04/4-3-08.png" />
@@ -163,6 +184,6 @@ function createDescription(type, name, index, work) {
     console.log(`${window.location.hash} == #${section.id}`);
     if (window.location.hash == `#${section.id}`) {
         console.log(`${window.location.href} to #${name}`);
-        window.location.href == `#${name}`;
+        window.location.href = `#${section.id}`;
     }
 }

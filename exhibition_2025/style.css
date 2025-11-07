@@ -1388,41 +1388,102 @@ body {
 	align-items: center;
 	gap: 10px 0;
 }
-	.work-slider .work-cover{
-		position:relative;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		height:70%;
-		width:100%;
-	}
-		.work-slider .work-cover img{
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			width:100%;
-			height:100%;
-			object-fit:contain;
-		}
-		.work-slider .work-cover .cover-grp {
-			width: 90%;
-			height: 90%;
-			position: absolute;
-			z-index: 1;
-		}
-		.work-slider .work-cover .cover-grp .cover {
-			width: 100%;
-			height: 100%;
-			position: relative;
-			left:1%;
-			z-index: 1;
-		}
-		.work-slider .work-cover .work-cover-deco{
+.work-slider .work-cover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    overflow: hidden; /* 重要：隱藏超出部分 */
+}
+
+/* === Carousel 核心樣式 === */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.work-cover .cover {
+    width: 0;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+    position: relative;
+    left: 1%; /* 保留你原本的偏移 */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.work-cover .cover.active {
+    opacity: 1;
+	width:100%;
+}
+
+/* 按鈕樣式 */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn span{
+	color:#333;
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* 圓點指示器 */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background: white;
+}		.work-slider .work-cover .work-cover-deco{
 			position:absolute;
 			width:100%;
 			height:100%;
 			object-fit:contain;
 			z-index:2;
+			pointer-events: none;
 		}
 			.work-slider .work-cover .work-cover-deco img{
 				height:auto;
