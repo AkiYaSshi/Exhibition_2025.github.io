@@ -1674,6 +1674,7 @@ body {
 	.work-slider{
 		width:100%;
 		gap:3px;
+		max-height: 50%;
 	}
 		.work-slider .work-cover{
 			height:80%;

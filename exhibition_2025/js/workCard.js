@@ -86,8 +86,8 @@ function createDescription(type, name, index, work) {
     const style = document.createElement("style");
     const section = document.createElement("div");
 
-    const pre = (index - 1) >= 0 ? index - 1 : type.length - 1;
-    const next = (index + 1) < type.length ? index + 1 : 0;
+    const pre = ((index - 1) + type.length) % type.length;
+    const next = ((index + 1) + type.length) % type.length;
 
     style.textContent = `
         #${name}-${index}{ 

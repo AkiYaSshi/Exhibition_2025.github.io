@@ -40,4 +40,5 @@ window.addEventListener('load', function () {
     containers.forEach((container, index) => {
         updateCarousel(index);
     });
+    console.log(`Carousel Load Complete!`);
 });

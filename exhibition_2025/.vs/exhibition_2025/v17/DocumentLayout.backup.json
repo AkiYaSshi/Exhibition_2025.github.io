@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\2025maa.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|solutionrelative:2025maa.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\js\\workCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\works.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|\u65B9\u6848\u9805\u76EE{8DDC4786-5FC8-F15C-1CA5-9F41FD4BEB75}|solutionrelative:works.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\js\\scrollBehavior.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\scrollBehavior.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +34,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "works.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\works.json",
-              "RelativeDocumentMoniker": "works.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\works.json",
-              "RelativeToolTip": "works.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-04T18:09:15.747Z",
+              "DocumentIndex": 4,
+              "Title": "scrollBehavior.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\js\\scrollBehavior.js",
+              "RelativeDocumentMoniker": "js\\scrollBehavior.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\js\\scrollBehavior.js",
+              "RelativeToolTip": "js\\scrollBehavior.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-05T15:45:44.733Z",
               "EditorCaption": ""
             },
             {
@@ -49,33 +53,46 @@
               "RelativeDocumentMoniker": "js\\workCard.js",
               "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\js\\workCard.js",
               "RelativeToolTip": "js\\workCard.js",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwKMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-04T18:03:43.432Z",
+              "WhenOpened": "2025-11-05T14:23:29.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "works.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\works.json",
+              "RelativeDocumentMoniker": "works.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\works.json",
+              "RelativeToolTip": "works.json",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAPsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T17:27:23.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "2025maa.html",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\2025maa.html",
               "RelativeDocumentMoniker": "2025maa.html",
               "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\2025maa.html",
               "RelativeToolTip": "2025maa.html",
-              "ViewState": "AgIAAL4AAAAAAAAAAADwv88AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAHAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-04T07:13:22.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\style.css",
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\user\\Desktop\\Repository\\Exhibition_2025.github.io\\exhibition_2025\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AgIAAIYDAAAAAAAAAADgv50DAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAOkFAAAAAAAAAAAwwA4GAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-04T07:13:22.146Z",
               "EditorCaption": ""
