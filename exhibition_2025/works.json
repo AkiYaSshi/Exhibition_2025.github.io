@@ -166,69 +166,124 @@
   "games": [
     {
       "title": "節奏同奏 RhythmSync",
-      "cover": "https://iili.io/KP1Tmtp.png",
+      "cover": ["https://iili.io/KP1Tmtp.png",
+                "https://iili.io/KtpydvI.png",
+                "https://iili.io/KtppLp1.png",
+                "https://iili.io/KtpppEv.png",
+                "https://iili.io/KtpyJYN.png",
+                "https://iili.io/KtpyFTX.png"],
       "author": "林恭潁 許哲誠",
       "description": "《節奏同奏》是一款融合音樂與跑酷的遊戲，玩家將隨著音樂節奏奔馳於隨機生成的關卡。遊戲以灰階美術風格營造懷舊氛圍，並透過音樂頻譜驅動畫面變化，從UI設計、視覺特效、鏡頭運動到背景場景，都與音樂完美連結。隨著節奏的律動，遊戲帶來活力四射且沉浸感十足的視聽體驗。"
     },
     {
       "title": "環保投籃王 EcoHoops",
-      "cover": "https://iili.io/KP1TDAv.png",
+      "cover": ["https://iili.io/KP1TDAv.png",
+                "https://iili.io/Ktyd0WF.png",
+                "https://iili.io/KtydaDP.png",
+                "https://iili.io/KtydYOB.png",
+                "https://iili.io/Ktydlx1.png",
+                "https://iili.io/KtydVUv.png"],
       "author": "許哲誠 林恭潁",
       "description": "《環保投籃王》是一款專為孩童設計的VR遊戲，將籃球的樂趣與環保教育完美結合！在這個遊戲中，小朋友們將成為環保小英雄，通過投擲不同類型的垃圾到正確的回收桶中來得分。每一次成功的投擲不僅能夠獲得高分，還能學習到如何正確分類和回收垃圾。"
     },
     {
       "title": "七日",
-      "cover": "https://iili.io/KP1T6MP.jpg",
+      "cover": ["https://iili.io/KP1T6MP.jpg",
+                "https://iili.io/KtpLrHg.jpg",
+                "https://iili.io/KtpL4Ra.jpg",
+                "https://iili.io/KtpLUUF.jpg",
+                "https://iili.io/KtpL8KP.jpg",
+                "https://iili.io/KtpLLVp.jpg"],
       "author": "劉家伶 林雨竺",
       "description": "當生活日復一日地重複著，你是否感到迷茫。<br /><br />兩個主角各自被自己的問題所困擾，困在生活中循環往復。<br />飄在生活中是一個擅長傾聽並樂於開解別人的角色，不過在長久的，重複的開解中他也逐漸感到鬱悶，想要以自己感受為主卻又被愧疚感困住。<br />山嚮往自由想要離開循規蹈矩的日子，但他沒有勇氣打破一切向前一步。<br />劇情用7天的重複而有著一些改變的日常來講述兩位角色的困境和選擇。"
 
     },
     {
       "title": "選物販賣機",
-      "cover": "https://iili.io/KP1TPP1.png",
+      "cover": ["https://iili.io/KP1TPP1.png",
+                "https://iili.io/Kty9Qsa.png",
+                "https://iili.io/KtyHlkB.png",
+                "https://iili.io/Kty96OP.png",
+                "https://iili.io/KtyHadQ.png",
+                "https://iili.io/KtyHoeS.png"],
       "author": "張意玟",
       "description": "在現代生活中，人們越來越習慣於「擁有」並不存在於現實世界的事物，線上遊戲的寶物、雲端收藏的照片，甚至是社交平台上的點讚與留言。 這些虛擬資產雖然無法觸摸，卻真切地影響了我們的情感與行為。<br />《選物販賣機》以 AR 技術連接虛擬與真實， 透過轉動手中的娃娃機盒，嘗試夾取虛擬空間中的娃娃。在觸摸實體物件的同時，玩家也獲得來自數位空間的「擁有」錯覺。 即使娃娃僅是螢幕中的 3D 模型，夾取成功的瞬間依然能帶來愉悅與成就感。<br />在虛擬與現實的交界處，情感的真實性並不依賴於物件的物理存在， 而源自於我們對互動、努力與結果的心理認同。"
 
     },
     {
       "title": "《Block In C》",
-      "cover": "https://iili.io/KP1TgtV.png",
+      "cover": ["https://iili.io/KP1TgtV.png",
+                "https://iili.io/KtpreV9.png",
+                "https://iili.io/KtprkPe.png",
+                "https://iili.io/KtprOo7.png",
+                "https://iili.io/KtprScb.png",
+                "https://iili.io/KtprPDB.png"],
       "author": "劉采寧 曹曦 黃昱婷 高淑真",
       "description": "本互動式動畫《Block In C》以美國作曲家、電子音樂的先驅者Terry Riley於1964年所創作的開放性音樂作品《In C》為發想。在VR虛擬實境的模擬之下，《Block In C》描繪了學齡前兒童在透過堆疊積木的互動過程認識世界的情境。本創作《Block In C》以音樂的集體互動性和即興演奏感的角度出發，以遊戲引擎Unreal Engine 5為主要整合工具及體驗平台，並以3D的方式做呈現。創作者想通過本作以來達到《In C》中開放性音樂的特徴與特性，體驗者將在觀賞與體驗中通過與各個動畫積木角色的互動，且同時依據不同角色的互動中創造出《In C》曲目53個小結旋律片段不同組合與構成。<br /><br />關鍵字：互動式動畫、音樂、開放性、即興感"
     },
     {
       "title": "剪刀石頭布：一決勝負",
-      "cover": "https://iili.io/KP1TSAx.png",
+      "cover": ["https://iili.io/KP1TSAx.png",
+                "https://iili.io/KtpD0mu.png",
+                "https://iili.io/KtpDGXj.png",
+                "https://iili.io/KtpDlee.png",
+                "https://iili.io/KtpDEzb.png",
+                "https://iili.io/KtpDX1V.png"],
       "author": "楊定雄",
       "description": "創作理念<br /> 本作品旨在結合不同技術，創造全新的遊戲體驗。主要聚焦於 手部追蹤 和 手勢識別，讓玩家可以通過自然的手部動作進行互動。儘管因場地限制未能展示連線對戰功能，但我們已經利用 Netcode for GameObjects 為未來的擴展做好準備。這些技術的融合不僅提升了遊戲的沉浸感，還讓玩家能夠更真實地體驗虛擬世界的互動。<br />設計思路<br />本遊戲的設計以 猜拳 的規則為基礎，使玩家能夠輕鬆上手，並大大縮短學習機制的時間。遊戲中，玩家將進入一個 VR 動作遊戲環境，透過猜拳手勢將氣功纏繞在手上，並利用出拳動作發射猜拳氣功，以擊破對應的目標標靶。玩家的目標是在限時60秒內擊破最多的標靶，這種簡單而富有挑戰性的玩法不僅增加了遊戲的趣味性，也鼓勵玩家在競技中不斷提升自己的反應速度和策略思考能力。"
     },
     {
       "title": "研究生禮貌運動",
-      "cover": "https://iili.io/KP1Tecu.jpg",
+      "cover": ["https://iili.io/KP1Tecu.jpg",
+                "https://iili.io/KtpZVTb.jpg",
+                "https://iili.io/KtpZGyu.jpg",
+                "https://iili.io/KtpZ037.jpg",
+                "https://iili.io/KtpZEve.jpg",
+                "https://iili.io/KtpZXZx.jpg"],
       "author": "王昱涵 施亦恬 張寧軒 黃俊賢",
       "description": "本作品基於「研究生禮貌運動」為設計背景，將互動式網頁與心理測驗結合呈現。透過視覺、音樂、互動及心理測驗，引導體驗者沉浸於研究生幽默與壓力交織的情感世界。<br /><br />總共有五題測驗題目，體驗者可以使用滑鼠點擊、滾輪滑動，選擇與自身相對應的選項。<br /><br />最後根據後臺統計的分數，體驗者在將獲得相對應的結果分析，如積極型、佛系型、消極型與各一首不同風格的《巴西的巴赫風格組曲》第四號-前奏曲。"
     },
     {
       "title": "Rush In C",
-      "cover": "https://iili.io/KP1Tk8b.jpg",
+      "cover": ["https://iili.io/KP1Tk8b.jpg",
+                "https://iili.io/KtpsYCB.jpg",
+                "https://iili.io/Ktpskan.png",
+                "https://iili.io/Ktpsi67.png",
+                "https://iili.io/KtpsLF9.png",
+                "https://iili.io/KtpsVTv.jpg"],
       "author": "鍾宛妤 簡安廷 王郁菱 楊定雄",
       "description": "《Rush in C》是一款結合音樂與遊戲的多人派對橫向卷軸挑戰遊戲，靈感來自 Terry Riley 的極簡音樂經典《In C》。遊戲中，音樂小節被轉化為關卡節奏，平台會隨著樂曲動態生成並逐步加速，玩家必須跟隨節奏在平台上持續跳躍以避免墜落。遊戲設有玩家碰撞機制，能透過推擠將對手擊落，並在對手死亡時觸發平台減速，為自己減速的優勢，同時死亡的玩家會獲得道具作為補償。每位玩家的生命數固定，生命耗盡就會淘汰。能活到最後的人就是贏家。《Rush in C》不僅考驗反應與操作，更讓玩家在音樂的律動中體驗競爭的緊張與樂趣。 "
     },
     {
       "title": "Leave It to Me",
-      "cover": "https://iili.io/KP1TOFe.png",
+      "cover": ["https://iili.io/KP1TOFe.png",
+                "https://iili.io/KtpiusI.png",
+                "https://iili.io/KtpixbR.png",
+                "https://iili.io/KtpiTWN.png",
+                "https://iili.io/Ktpin5J.png",
+                "https://iili.io/Ktpi7gn.png"],
       "author": "林芮妤 張方恩 黃湘玲 王嘉琳",
       "description": "《Leave It to Me》是一款室內設計布置遊戲，玩家作為LITM家政公司的新進員工將接取來自公司發派的委託工作 ，幫助委託人完成布置需求、裝潢室內或室外空間。 "
     },
     {
       "title": "極限外送員",
-      "cover": "https://iili.io/KP1ThnS.png",
+      "cover": ["https://iili.io/KP1ThnS.png",
+                "https://iili.io/Ktpm7R9.png",
+                "https://iili.io/Ktpmul2.png",
+                "https://iili.io/KtpmASS.png",
+                "https://iili.io/KtpmTKl.png",
+                "https://iili.io/Ktpm0Vj.png"],
       "author": "黃少萱 許姿穎 王千昀",
       "description": "在現代社會中，外送員已成為在日常生活中常出現的角色之一。道路即是外送員每天身處的戰場，究竟在這充滿未知的道路上，應該注意什麼規則、要如何在時限內成功送完訂單，真是令人好奇啊⋯⋯ "
     },
     {
       "title": "Design Your Life 設計人生",
-      "cover": "https://iili.io/KP1Ta6X.jpg",
+      "cover": ["https://iili.io/KP1Ta6X.jpg",
+                "https://iili.io/Ktp6Gp4.png",
+                "https://iili.io/Ktp6Wj2.png",
+                "https://iili.io/Ktp61YG.png",
+                "https://iili.io/Ktp602s.png",
+                "https://iili.io/Ktp6XQS.png"],
       "author": "謝恩熙 林郁甯",
       "description": "想要設計人生的我們被人生設計了QQ<br />歡迎來到設計之森，開啟你的設計人生吧！"
     },
@@ -245,13 +300,23 @@
     },
     {
       "title": "雙界旅人《Echoes Between》",
-      "cover": "https://iili.io/KP1TMu4.png",
+      "cover": ["https://iili.io/KP1TMu4.png",
+                "https://iili.io/KtyqPmx.png",
+                "https://iili.io/KtyqtqP.png",
+                "https://iili.io/KtyqQLB.png",
+                "https://iili.io/KtyqbrF.png",
+                "https://iili.io/KtyB2Xp.png"],
       "author": "林妤庭 許姿穎 陳彥妤",
       "description": "雙界旅人《Echoes Between》是一款核心玩法為雙世界切換的遊戲。主角因為與愛人吵架時一句「跟你相處還不如去死」而掉入靈界，部分靈魂四散各處。主角需要找回所有靈魂碎片然後回到現實，否則就會永遠死亡留在靈界。 "
     },
     {
       "title": "(閾限 LIMINAL SPACE)",
-      "cover": "https://iili.io/KP1TG9f.png",
+      "cover": ["https://iili.io/KP1TG9f.png",
+                "https://iili.io/KtyJBCg.png",
+                "https://iili.io/KtyJfZF.png",
+                "https://iili.io/KtyJx3v.png",
+                "https://iili.io/KtyJn6J.png",
+                "https://iili.io/KtyJIvp.png"],
       "author": "楊武霖",
       "description": "看似美好的外表，其實暗藏許多黑暗。<br /><br />主角巴茲偶然經過這座歡騰的城市，便被吸引進入<br />沒曾想這座城市卻暗藏黑暗......<br />而一位太空小男孩為了拯救巴茲，<br />開始在城市中四處探索。<br /><br />透過遊戲的核心玩法「心靈鑰匙」、兩位角色的互助，找到真正該前往的目的，以及想起埋藏在心靈深處、最初的夢想。"
     }
